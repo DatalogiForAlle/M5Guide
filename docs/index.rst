@@ -48,6 +48,7 @@ User guide
 Looking for something specific?
 -------------------------------
 * :ref:`genindex`
+
 .. * :ref:`modindex`
 
 * :ref:`search`

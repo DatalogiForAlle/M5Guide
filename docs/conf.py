@@ -58,5 +58,10 @@ html_static_path = ['_static']
 
 
 html_theme_options = {
-    "description": "Unofficial reference manual for MicroPython on M5StickC"
+    "description": "Unofficial reference manual for MicroPython on M5StickC",
+    "fixed_sidebar": True,
+}
+
+html_sidebars = {
+   '**': [ "sidebar.html" ],
 }
