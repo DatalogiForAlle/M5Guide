@@ -1,3 +1,5 @@
+from datetime import datetime
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -17,8 +19,10 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'M5 MicroPython Guide'
-copyright = '2020, Martin Dybdal, Maja Hvidtfelt'
+project = 'M5 Guide'
+year = datetime.now().year
+_period = "2020-{}".format(year) if year > 2020 else "2020"
+copyright = '{}, DIKU, University of Copenhagen'.format(_period)
 author = 'Martin Dybdal, Maja Hvidtfelt'
 
 
@@ -50,3 +54,8 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+html_theme_options = {
+    "description": "Unofficial reference manual for MicroPython on M5StickC"
+}

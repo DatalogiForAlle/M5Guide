@@ -1,20 +1,53 @@
-.. M5 MicroPython Guide documentation master file, created by
-   sphinx-quickstart on Wed Sep 30 12:50:37 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+M5 MicroPython Guide
+====================
 
-Welcome to M5 MicroPython Guide's documentation!
-================================================
+This website serves as documentation for the current version of
+MicroPython that runs on M5StickC, in the future it might cover more
+devices, or other topics, but as of now we focus on programming the
+M5StickC with MicroPython.
 
+Quickstart
+----------
+ * Getting started with M5StickC and Mu-editor
+
+
+User guide
+-----------------
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   drawing
+   power
+   motion_sensors
+   time
 
 
+..
+   User guide
+   ----------
+    * Drawing on the LCD screen
+    * Built-in buttons
+    * Built-in LED
+    * Accelerometer and gyroscope
+    * Connectivity
 
-Indices and tables
-==================
+      * WiFI
+      * ESPNOW
+    * Time
+    * Microphone
+    * External devices
 
+      * SPK-HAT: Speaker
+      * ENV-HAT: Environmental sensor
+
+   With additional libraries
+   -------------------------
+    * Sensor fusion: calculating `pitch` and `roll`
+
+
+Looking for something specific?
+-------------------------------
 * :ref:`genindex`
-* :ref:`modindex`
+.. * :ref:`modindex`
+
 * :ref:`search`
