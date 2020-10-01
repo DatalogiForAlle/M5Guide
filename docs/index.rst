@@ -1,10 +1,14 @@
 M5 MicroPython Guide
 ====================
 
-This website serves as documentation for the current version of
-MicroPython that runs on M5StickC, in the future it might cover more
-devices, or other topics, but as of now we focus on programming the
-M5StickC with MicroPython.
+Welcome to the unofficial guide for M5 MicroPython running on
+M5StickC. It serves as both introduction for new users and
+documentation.
+
+Currently the ambition is to cover the main programming interface of
+the M5StickC, in the future other topics and devices might also be
+covered.
+
 
 Quickstart
 ----------
