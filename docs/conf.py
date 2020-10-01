@@ -43,6 +43,7 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 master_doc = "index"
+html_show_sourcelink = False
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -60,6 +61,8 @@ html_static_path = ['_static']
 html_theme_options = {
     "description": "Unofficial reference manual for MicroPython on M5StickC",
     "fixed_sidebar": True,
+    "show_relbar_bottom": True,
+    "show_powered_by": False,
 }
 
 html_sidebars = {
