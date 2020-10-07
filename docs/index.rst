@@ -1,30 +1,45 @@
 M5 MicroPython Guide
 ====================
 
-Welcome to the unofficial guide for M5 MicroPython running on
-M5StickC. It serves as both introduction for new users and
-documentation.
+Velkommen til denne uofficielle guide til M5 MicroPython på
+M5StickC. Denne guide er tænkt både som en introduktion for nye
+brugere, og som generel dokumentation af de forskellige biblioteker
+nødvendige for at programmere en M5StickC.
 
-Currently the ambition is to cover the main programming interface of
-the M5StickC, in the future other topics and devices might also be
-covered.
+**Status:** Guiden er pt. under udvikling. Den nuværende ambition er
+ at dække de primære områder, så som: tegne på skærmen, bruge af
+ indbyggede sensorer, og eksempler på hvordan eksterne enheder kobles
+ på. I fremtiden kan det være andre emner også bliver dækket.
 
 
-Quickstart
+Første skridt
 ----------
- * Getting started with M5StickC and Mu-editor
+ * Kom i gang med M5StickC og Mu-editoren
+ * Tutorial(s)
 
 
-User guide
------------------
+Brugerguide
+-----------
 .. toctree::
    :maxdepth: 2
 
-   drawing
-   power
-   motion_sensors
-   time
+   tegne
+   stroem
+   accelerometer_gyro
+   tid
 
+Videre med M5StickC og Python
+-----------------------------
+ * FAQ
+ * Projektidéer
+ * Tutorials/bøger om Python
+
+Avanceret
+---------
+ * Tilkoble kamera (M5 UnitV)
+ * `boot.py`
+ * ESP32 Thing og flash MicroPython firmware
+ * Loddeguide
 
 ..
    User guide
@@ -49,10 +64,12 @@ User guide
     * Sensor fusion: calculating `pitch` and `roll`
 
 
-Looking for something specific?
--------------------------------
-* :ref:`genindex`
+Leder du efter noget specifikt?
+---------------------
+* :ref:`Søgning <search>` - søg i hele dokumentationen
+
+* :ref:`genindex` - register over alle kommandoer
 
 .. * :ref:`modindex`
 
-* :ref:`search`
+

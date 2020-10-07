@@ -24,7 +24,7 @@ year = datetime.now().year
 _period = "2020-{}".format(year) if year > 2020 else "2020"
 copyright = '{}, DIKU, University of Copenhagen'.format(_period)
 author = 'Martin Dybdal, Maja Hvidtfelt'
-
+language = 'da'
 
 # -- General configuration ---------------------------------------------------
 
@@ -59,7 +59,7 @@ html_static_path = ['_static']
 
 
 html_theme_options = {
-    "description": "Unofficial reference manual for MicroPython on M5StickC",
+    "description": "Uofficiel brugerguide til MicroPython på M5StickC",
     "fixed_sidebar": True,
     "show_relbar_bottom": True,
     "show_powered_by": False,
