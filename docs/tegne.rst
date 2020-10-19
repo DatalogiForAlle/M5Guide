@@ -17,10 +17,10 @@ For at komme i gang, har du brug for at få adgang til skærmen via
 Når det er gjort, er du klar til at tegne. For eksempepl kan du tegne
 en firkant ved at kalde funktionen :func:`lcd.rect`::
 
-  lcd.rect(10, 20, 40, 70)
+  lcd.rect(10, 20, 30, 50)
 
 De første to værdier, 10 og 20, angiver hvor rektanglet skal tegnes
-som et `x`,`y`-koordinat. De næste to tal, 40 og 70, angiver hvor bred
+som et `x`,`y`-koordinat. De næste to tal, 30 og 50, angiver hvor bred
 og hvor høj firkanten skal være.
 
 Koordinatsystem
@@ -48,11 +48,11 @@ omrids, men ellers gennemsigtige (ingen udfyldning). Farverne kan
 
 Hvis vi for eksempel vil tegne firkanten med grøn farve som omrids, kan vi skrive::
 
-  lcd.rect(10, 20, 40, 70, color=0x00FF00)
+  lcd.rect(10, 20, 30, 50, color=0x00FF00)
 
 Hvis vi vil have grønt omrids og rød udfyldning, kan vi skrive::
 
-  lcd.rect(10, 20, 40, 70, color=0x00FF00, fillcolor=0xFF0000)
+  lcd.rect(10, 20, 30, 50, color=0x00FF00, fillcolor=0xFF0000)
 
 Farveværdierne angives i hexadecimale tal. Dem kan man fx slå op i
 tabeller online, eller ved at bruge farvevælger i et tegneprogram. De
@@ -68,7 +68,7 @@ En skærm kan vende på 4 forskellige måder, og alt afhængigt af hvordan
 du har tænkt dig at bruge din M5StickC, kan det være forskelligt hvad
 du gerne vil have til at være opad. Her er mulighederne:
 
-Illustration: TODO
+.. image:: illustrationer/orientation.png
 
 For at indstille hvilken vej der er opad, skal du bruge kommandoen
 ``lcd.orient``. Hvis du f.eks. vil lave et smart-watch med din
