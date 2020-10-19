@@ -35,6 +35,7 @@ er placeret i det øverste venstre hjørne af skærmen, og at når
 y-værdien stiger, så flyttes koordinatet nedad, og ikke opad, som du
 ellers kender det fra matematik.
 
+.. image:: koordinatsystem.png
 Illustration: TODO
 
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
