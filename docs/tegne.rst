@@ -14,7 +14,7 @@ For at komme i gang, har du brug for at få adgang til skærmen via
 
   from m5stack import lcd
 
-Når det er gjort, er du klar til at tegne. For eksempepl kan du tegne
+Når det er gjort, er du klar til at tegne. For eksempel kan du tegne
 en firkant ved at kalde funktionen :func:`lcd.rect`::
 
   lcd.rect(10, 20, 30, 50)
@@ -68,7 +68,7 @@ En skærm kan vende på 4 forskellige måder, og alt afhængigt af hvordan
 du har tænkt dig at bruge din M5StickC, kan det være forskelligt hvad
 du gerne vil have til at være opad. Her er mulighederne:
 
-.. image:: illustrationer/orientation.png
+.. image:: illustrationer/orientationlille.png
 
 For at indstille hvilken vej der er opad, skal du bruge kommandoen
 ``lcd.orient``. Hvis du f.eks. vil lave et smart-watch med din
