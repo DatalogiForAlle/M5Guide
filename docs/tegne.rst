@@ -35,8 +35,7 @@ er placeret i det øverste venstre hjørne af skærmen, og at når
 y-værdien stiger, så flyttes koordinatet nedad, og ikke opad, som du
 ellers kender det fra matematik.
 
-.. image:: illustrationer/koordinatsystem.png
-   :height: 100px
+.. image:: illustrationer/koordinatsystemlille.png
 
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
 kan du læse en beskrivelse for hver af dem om hvordan de virker.
