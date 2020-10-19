@@ -36,6 +36,7 @@ y-værdien stiger, så flyttes koordinatet nedad, og ikke opad, som du
 ellers kender det fra matematik.
 
 .. image:: illustrationer/koordinatsystem.png
+   :scale: 50 %
 
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
 kan du læse en beskrivelse for hver af dem om hvordan de virker.
