@@ -27,6 +27,7 @@ Brugerguide
    stroem
    accelerometer_gyro
    tid
+   wifi
 
 Videre med M5StickC og Python
 -----------------------------
