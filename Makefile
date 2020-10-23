@@ -3,3 +3,6 @@ dev:
 
 html:
 	cd docs && make html
+
+clean:
+	rm -r docs/_build
