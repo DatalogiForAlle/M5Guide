@@ -35,7 +35,9 @@ er placeret i det øverste venstre hjørne af skærmen, og at når
 y-værdien stiger, så flyttes koordinatet nedad, og ikke opad, som du
 ellers kender det fra matematik.
 
-.. image:: illustrationer/koordinatsystem.svg
+.. figure:: illustrationer/koordinatsystem.svg
+   :alt: M5StickC med koordinatsystem
+   :width: 500px
 
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
 kan du læse en beskrivelse for hver af dem om hvordan de virker.
@@ -68,7 +70,10 @@ En skærm kan vende på 4 forskellige måder, og alt afhængigt af hvordan
 du har tænkt dig at bruge din M5StickC, kan det være forskelligt hvad
 du gerne vil have til at være opad. Her er mulighederne:
 
-.. image:: illustrationer/orientation.svg
+.. figure:: illustrationer/orientation.svg
+   :alt: M5StickC orienteringer (portræt, landskab, omvendt portræt,
+         omvendt landskab)
+   :width: 500px
 
 For at indstille hvilken vej der er opad, skal du bruge kommandoen
 ``lcd.orient``. Hvis du f.eks. vil lave et smart-watch med din
@@ -84,6 +89,7 @@ og så skriver du::
    følgende tegnekommandoer.
               
    :param orientation: skal være én af:
+
    * ``lcd.PORTRAIT`` (standard): portræt
    * ``lcd.LANDSCAPE``: landskab
    * ``lcd.PORTRAIT_FLIP``: omvendt portræt
@@ -478,6 +484,7 @@ Tegne tekst på skærmen
    TODO: illustration
 
    :param font: skal være én af følgende indbyggede værdier:
+
    * ``lcd.FONT_Default`` (standard)
    * ``lcd.FONT_DefaultSmall``
    * ``lcd.FONT_DejaVu18``

@@ -6,6 +6,10 @@ M5StickC. Denne guide er tænkt både som en introduktion for nye
 brugere, og som generel dokumentation af de forskellige biblioteker
 nødvendige for at programmere en M5StickC.
 
+.. figure:: illustrationer/m5stickc.jpg
+   :alt: M5StickC
+   :width: 400px
+
 **Status:** Guiden er pt. under udvikling. Den nuværende ambition er
  at dække de primære områder, så som: tegne på skærmen, bruge af
  indbyggede sensorer, og eksempler på hvordan eksterne enheder kobles
