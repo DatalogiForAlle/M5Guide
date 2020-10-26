@@ -28,10 +28,11 @@ Brugerguide
    :maxdepth: 2
 
    tegne
-   stroem
    accelerometer_gyro
-   tid
    wifi
+   tid
+   stroem
+
 
 Videre med M5StickC og Python
 -----------------------------
