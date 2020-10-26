@@ -7,8 +7,9 @@ Grundlæggende
 
 M5stickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består af et accelerometer og et gyroskop.  En bevægelsessensor af denne type kaldes en IMU - inertial measurement unit. Og denne konkrete IMU har 6 grader af frihed. 
 
-.. image:: illustrationer/6degreeaxis.svg
-
+.. figure:: illustrationer/6degreeaxis.svg
+   :alt: 6 graders frihed, plus pitch, roll og yaw 
+   :width: 500px
 
 
 Accelerometer
@@ -16,14 +17,18 @@ Accelerometer
 Accelerometeret registrerer den acceleration hvormed M5stick bevæges i retning frem/tilbage/op/ned langs en akse. Man kan forestille sig at hver akse er forsynet med en lille fjeder med en vægt, og så måler om fjederen bliver strakt eller trykket sammen. Tyngdekraften vil også påvirke accelerometeret, hvis "fjederen" er placeret i op/ned-aksen, men ikke hvis den ligger vandret. Enhver flytning af sensoren vil udløse ændringer, men kun mens sensoren får ændret sin hastighed - ikke hvis den bevæger sig med jævn hastighed eller ligger stille.
 Accelerometeret kan altså ikke direkte bruges til at måle en placering, men afslører derimod kraften bag en bevægelse. Accelerometeret kan i sig selv anvendes til f.eks. at registrere ryst.  
 
-.. image:: illustrationer/accel.svg
+.. figure:: illustrationer/accel.svg
+   :alt: acceleration langs x-, y-, z-aksen. 
+   :width: 300px
 
 
 Gyroskop
 ^^^^^^^^
 Gyroskopet registrerer rotation omkring en akse. 
 
-.. image:: illustrationer/gyro.svg
+.. figure:: illustrationer/gyro.svg
+   :alt: gyroskop, drejning x-, y-, z-aksen. 
+   :width: 190px
 
 
 
@@ -62,37 +67,124 @@ Hvis man skal bruge sensorens x y z målinger separeret, kan man gemme dem som e
 	gx, gy, gz = myIMU.gyro
 
 
-Registrer bevægelse
+
+ 
+
+Gemme data
+----------
+
+.txt fil
+^^^^^^^^
+
+For at gemme data laves først en fil, ved at kalde funktionen :func:`open` og give to argumenter. 
+Det første argument er det ønskede navn på filen, det næste er \'w\' fordi vi ønsker at kunne skrive i filen (w for write)::
+
+	fil = open('data.txt', 'w')
+
+Dernæst fortæller man hvad der ønsker skrevet i filen med funktionen :func:`fil.write`::
+	
+	fil.write('Her kan du skrive tekst - husk citationstegn!') 
+
+Tilsidst lukkes filen med :func:`f.close`::
+	
+	fil.close()
+
+
+.csv fil
+^^^^^^^^
+
+På tilsvarende måde kan man lave en .csv fil. Her kan man bruge komma skifter til næste søjle, mens \'\\n\' (newline) skifter til næste række::
+
+	fil = open('data.csv', 'w')
+	fil.write(',søjle1,søjle2,søjle3\n' +
+         	  'række1,1,2,3\n' +
+         	  'række2,4,5,6\n' +
+        	  'række3,7,8,9\n')
+	fil.close()
+
+Man skal dog holde tungen lige i munden her - der er en masse tilfælde hvor denne metode vil give et dårligt resultat - og pas på med mellemrum. Python har et indbygget bibliotek til at håndtere csv-filer, med det er desværre ikke med som standart på M5stickC. 
+Man kan også importere en .txt fil til de fleste regneark, men hvis man ikke skal lave for meget manuel oprydning, er det en fordel at tænke i de baner som beskrevet herover. 
+
+Hente data
+^^^^^^^^^^
+Hvis man vil se indholdet af en fil klan det gøres ved at åbne den i læsetilstand med :func:`open` og give \'r\' (r for read) som 2. argument. Dernæst kan funktionen :func:`fil.read` bruges, f.eks sammen med printfunktionen::
+
+	fil = open('data.txt', 'r')
+	print(fil.read())
+	fil.close()
+
+
+Fra M5stickC til computer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'en. For at få den over på computeren, kan man klikke på 'Files' i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over til \"Files on your computer\". Filen ligger nu samme sted som den mu-fil du arbejder i er gemt.  
+
+.. image:: illustrationer/movefile.gif
+
+
+EKSEMPEL: Gemme IMU data i .csv format
+----------------------------
+
+For at få gemt målinger fra bevægelsessensoren kan følgende kode benyttes::
+
+	import imu
+	import time
+
+	myIMU = imu.IMU()
+	fil = open('imudata.csv', 'w')
+	fil.write(';accelerometer_x;accelerometer_y;accelerometer_z;' +
+          	'gyroskop_x;gyroskop_x;gyroskop_x\n')
+
+	for i in range(10):	
+		time.sleep_ms(600)
+  	 	dataline = myIMU.acceleration + myIMU.gyro
+  	  	print(dataline)
+   	 	fil.write(str(i) + '; ')
+  	  	for j in range(len(dataline)):
+      	  		fil.write(str(dataline[j]) + '; ')
+   	 	fil.write('\n')    
+	fil.close() 
+
+
+Nu kan man trække filen over til computeren og åbne den. 
+Tjek at tallene er som de skal være - juster i Import Setting, hvis det ser forkert ud. 
+Som delimiter/Value Separator skal semikolon bruges (fordi det er den vi bruger i koden) \';\'. 
+Som Decimal Separator skal punktum \'.\' bruges. 
+Der er basis for at kludre rigtig meget rundt i tallene - så se dig godt for.    
+
+.. figure:: illustrationer/importsettings.png
+   :alt: gyroskop, drejning x-, y-, z-aksen. 
+   :width: 300px
+
+
+EKSEMPEL: Registrer bevægelse
 -------------------
 
 Som illustration på hvordan accelerometeret kan bruges er her eksemplekode:: 
 
 	import imu
 	import time
-	import lcd
+	from m5stack import lcd
 
 	myIMU = imu.IMU()
 
-	def detectShake(accel, threshold):
-    		x, y, z = accel
-    		if abs(x) > threshold and abs(y) > threshold and abs(z) > threshold:
-      			shake = True
-    		else:
-       			shake = False
-   		return shake
+	def detectAccel(accel, threshold):
+       		if abs(accel) > threshold: detectAcceleration = True
+		else: detectAcceleration = False
+       		return detectAcceleration
 
 	while True:
-    		time.sleep_ms(10)
-		if detectShake(myIMU.acceleration, 50):
-    			lcd.clear(0xFF0000)
-		else: lcd.clear(0x00FF00)
- 
-
-Gemme data
-----------
-
-.csv fil
-^^^^^^^^
+       		time.sleep_ms(10)
+        	print((myIMU.acceleration))
+        	if detectAccel(myIMU.acceleration[0], 50):
+            		lcd.clear(0xFF0000)
+            		time.sleep_ms(1200)
+        	if detectAccel(myIMU.acceleration[1], 50):
+            		lcd.clear(0x00FF00)
+            		time.sleep_ms(1200)
+        	if detectAccel(myIMU.acceleration[2], 50):
+            		lcd.clear(0x0000FF)
+            		time.sleep_ms(1200)
+        	else: lcd.clear(0x000000)
 
 
 
