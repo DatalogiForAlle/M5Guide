@@ -5,7 +5,7 @@ Grundlæggende
 -------------
 
 
-M5stickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består af et accelerometer og et gyroskop.  En bevægelsessensor af denne type kaldes en IMU - inertial measurement unit. 
+M5stickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består af et accelerometer og et gyroskop.  En bevægelsessensor af denne type kaldes en IMU - inertial measurement unit. Og denne konkrete IMU har 6 grader af frihed. 
 
 .. image:: illustrationer/6degreeaxis.svg
 
@@ -13,8 +13,8 @@ M5stickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består af et ac
 
 Accelerometer
 ^^^^^^^^^^^^^
-Accelerometeret registrerer kræften hvormed M5stick bevæges i retning frem/tilbage/op/ned langs en akse. 
-Man kan tænke på en fjerner der kan trækkes ud - høj accelerationskræft - og så efterfølgnede tilbage til en normal - ingen accelerationskræft. Accelrometeret kan altså ikke direkte bruges til at måle en placering, men derimod kræften bag en bevægelse. Accelrometeret kan i sig selv anvendes til f.eks. at registrere ryst.  
+Accelerometeret registrerer den acceleration hvormed M5stick bevæges i retning frem/tilbage/op/ned langs en akse. Man kan forestille sig at hver akse er forsynet med en lille fjeder med en vægt, og så måler om fjederen bliver strakt eller trykket sammen. Tyngdekraften vil også påvirke accelerometeret, hvis "fjederen" er placeret i op/ned-aksen, men ikke hvis den ligger vandret. Enhver flytning af sensoren vil udløse ændringer, men kun mens sensoren får ændret sin hastighed - ikke hvis den bevæger sig med jævn hastighed eller ligger stille.
+Accelerometeret kan altså ikke direkte bruges til at måle en placering, men afslører derimod kraften bag en bevægelse. Accelerometeret kan i sig selv anvendes til f.eks. at registrere ryst.  
 
 .. image:: illustrationer/accel.svg
 
