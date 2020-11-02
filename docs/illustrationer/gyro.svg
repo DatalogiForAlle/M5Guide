@@ -10,7 +10,9 @@
 	.st4{fill:#DC8843;stroke:#8D191C;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st5{fill:none;stroke:#53B949;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st6{fill:none;stroke:#345CAA;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st7{fill:#010101;}
+	.st7{fill:none;}
+	.st8{font-family:'ArialMT';}
+	.st9{font-size:12px;}
 </style>
 <g>
 	<path class="st0" d="M84.6,36.7c0,0-13.4-0.2-13.4,5.9c0,11.9,41.7,11.1,41.7,0c0,0,0-6-13.2-6"/>
@@ -45,26 +47,10 @@
 <g>
 	<line class="st6" x1="92" y1="250.8" x2="92" y2="4"/>
 </g>
-<g>
-	<g>
-		<g>
-			<path class="st7" d="M5.6,113.1l-2.7-3.8h1.5l1.2,1.7c0.3,0.4,0.6,0.9,0.9,1.3h0.1c0.3-0.4,0.6-0.9,0.9-1.3l1.2-1.7H10l-2.8,3.9
-				l3,3.9H8.8l-1.3-1.8c-0.3-0.4-0.7-1-1-1.4H6.3c-0.3,0.5-0.6,0.9-1,1.4l-1.3,1.8H2.7L5.6,113.1z"/>
-		</g>
-	</g>
-</g>
-<g>
-	<g>
-		<g>
-			<path class="st7" d="M79,248.5l5.3-6h-4.7v-1.1h6.6v0.7l-5.3,6h5.5v1.1H79L79,248.5L79,248.5z"/>
-		</g>
-	</g>
-</g>
-<g>
-	<g>
-		<path class="st7" d="M35.2,214.6l0.3-1.1c0.2,0.1,0.5,0.1,0.7,0.1c1.1,0,1.8-0.7,2.1-1.6l0.2-0.6l-3.6-7.8h1.3l1.9,4.3
-			c0.3,0.7,0.6,1.5,1,2.3h0.1c0.3-0.7,0.6-1.6,0.8-2.3l1.7-4.3h1.3l-3.4,8.4c-0.6,1.5-1.5,2.7-3.3,2.7
-			C35.9,214.8,35.5,214.7,35.2,214.6z"/>
-	</g>
-</g>
+<rect x="32.2" y="209.1" class="st7" width="24.3" height="21.6"/>
+<text transform="matrix(1 0 0 1 32.2477 217.6527)" class="st8 st9">y</text>
+<rect x="81.4" y="240" class="st7" width="21.2" height="21.6"/>
+<text transform="matrix(1 0 0 1 81.4086 248.6034)" class="st8 st9">z</text>
+<rect x="4.6" y="108.2" class="st7" width="21.2" height="21.6"/>
+<text transform="matrix(1 0 0 1 4.5666 116.8207)" class="st8 st9">x</text>
 </svg>

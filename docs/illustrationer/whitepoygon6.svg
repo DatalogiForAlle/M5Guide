@@ -17,20 +17,8 @@
 	.st11{fill:#F7EC13;stroke:#5D5B5C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st12{fill:#282826;stroke:#5D5B5C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st13{display:none;opacity:0.48;}
-	.st14{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st15{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
-	.st16{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:0.9493,0.4746;}
-	.st17{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:1.0259,0.5129;}
-	.st18{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:1.0033,0.5016;}
-	.st19{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:0.9865,0.4932;}
-	.st20{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:1.0222,0.5111;}
-	.st21{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:0.9728,0.4864;}
-	.st22{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:0.9806,0.4903;}
-	.st23{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:0.9487,0.4744;}
-	.st24{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:1.0187,0.5094;}
-	.st25{fill:none;}
-	.st26{font-family:'ArialMT';}
-	.st27{font-size:8px;}
+	.st14{display:none;}
+	.st15{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 </style>
 <g id="Layer_1">
 	<g>
@@ -185,7 +173,7 @@
 		</g>
 		<g class="st13">
 			
-				<image style="display:inline;overflow:visible;enable-background:new    ;" width="231" height="439" xlink:href="56AA88DB9C03F810.png"  transform="matrix(0.2091 0 0 0.2091 17.3213 11.9961)">
+				<image style="display:inline;overflow:visible;enable-background:new    ;" width="231" height="439" xlink:href="63B50054C800F81B.png"  transform="matrix(0.2091 0 0 0.2091 17.3213 11.9961)">
 			</image>
 		</g>
 		<g id="Layer_4">
@@ -199,121 +187,16 @@
 		<g id="Layer_3">
 		</g>
 	</g>
-	<g id="Layer_3_1_">
-		<polygon class="st14" points="25.4,50.8 25.4,20.1 45.6,40.4 		"/>
-		<polygon class="st14" points="124.5,98.5 124.5,67.8 144.7,88.1 		"/>
-	</g>
-	<g id="Layer_4_1_">
-		<g>
-			<g>
-				<line class="st15" x1="25.4" y1="20.1" x2="25.4" y2="19.6"/>
-				<line class="st16" x1="25.4" y1="19.1" x2="25.4" y2="9.4"/>
-				<line class="st15" x1="25.4" y1="9.2" x2="25.4" y2="8.7"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="25.4" y1="20.1" x2="24.9" y2="20.1"/>
-				<line class="st17" x1="24.4" y1="20.1" x2="10.8" y2="20.1"/>
-				<line class="st15" x1="10.5" y1="20.1" x2="10" y2="20.1"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="25.5" y1="50.8" x2="25" y2="50.8"/>
-				<line class="st17" x1="24.5" y1="50.8" x2="10.9" y2="50.8"/>
-				<line class="st15" x1="10.6" y1="50.8" x2="10.1" y2="50.8"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="25.5" y1="102" x2="25.5" y2="101.5"/>
-				<line class="st18" x1="25.5" y1="101" x2="25.5" y2="51.6"/>
-				<line class="st15" x1="25.5" y1="51.3" x2="25.5" y2="50.8"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="45.6" y1="40.2" x2="45.1" y2="40.2"/>
-				<line class="st19" x1="44.6" y1="40.2" x2="10.9" y2="40.2"/>
-				<line class="st15" x1="10.6" y1="40.2" x2="10.1" y2="40.2"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="46" y1="40.4" x2="46" y2="39.9"/>
-				<line class="st20" x1="46" y1="39.3" x2="46" y2="8.9"/>
-				<line class="st15" x1="46" y1="8.7" x2="46" y2="8.2"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="124" y1="67.9" x2="124" y2="67.4"/>
-				<line class="st16" x1="124" y1="66.9" x2="124" y2="57.2"/>
-				<line class="st15" x1="124" y1="56.9" x2="124" y2="56.4"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="124" y1="67.9" x2="123.5" y2="67.9"/>
-				<line class="st21" x1="123.1" y1="67.9" x2="116" y2="67.9"/>
-				<line class="st15" x1="115.8" y1="67.9" x2="115.3" y2="67.9"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="124.1" y1="98.6" x2="123.6" y2="98.6"/>
-				<line class="st22" x1="123.1" y1="98.6" x2="117.5" y2="98.6"/>
-				<line class="st15" x1="117.2" y1="98.6" x2="116.7" y2="98.6"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="124.1" y1="112.9" x2="124.1" y2="112.4"/>
-				<line class="st23" x1="124.1" y1="111.9" x2="124.1" y2="99.3"/>
-				<line class="st15" x1="124.1" y1="99.1" x2="124.1" y2="98.6"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="144.3" y1="88" x2="143.8" y2="88"/>
-				<line class="st24" x1="143.3" y1="88" x2="116" y2="88"/>
-				<line class="st15" x1="115.8" y1="88" x2="115.3" y2="88"/>
-			</g>
-		</g>
-		<g>
-			<g>
-				<line class="st15" x1="144.7" y1="88.1" x2="144.7" y2="87.6"/>
-				<line class="st20" x1="144.7" y1="87.1" x2="144.7" y2="56.7"/>
-				<line class="st15" x1="144.7" y1="56.4" x2="144.7" y2="55.9"/>
-			</g>
-		</g>
-	</g>
 </g>
-<g id="Layer_2">
-	<rect x="21.3" y="2" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 21.3312 7.6781)" class="st26 st27">x1</text>
-	<rect x="1.7" y="16.8" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 1.6998 22.5618)" class="st26 st27">y1</text>
-	<rect x="1.7" y="36.2" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 1.6998 41.9281)" class="st26 st27">y2</text>
-	<rect x="1.7" y="47" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 1.6998 52.7281)" class="st26 st27">y3</text>
-	<rect x="41" y="1.7" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 40.9998 7.4281)" class="st26 st27">x2</text>
-	<rect x="21.3" y="101.9" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 21.3312 107.6585)" class="st26 st27">x3</text>
-	<rect x="120" y="49" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 120.0312 54.6781)" class="st26 st27">x1</text>
-	<rect x="106.8" y="64.6" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 106.8184 70.306)" class="st26 st27">y1</text>
-	<rect x="106.8" y="84.7" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 106.8184 90.4165)" class="st26 st27">y2</text>
-	<rect x="106.8" y="95.4" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 106.8184 101.1585)" class="st26 st27">y3</text>
-	<rect x="139.7" y="48.7" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 139.6998 54.4281)" class="st26 st27">x2</text>
-	<rect x="120" y="114.2" class="st25" width="12.8" height="13"/>
-	<text transform="matrix(1 0 0 1 120.0312 119.8889)" class="st26 st27">x3</text>
+<g id="Layer_2" class="st14">
+	
+		<image style="display:inline;overflow:visible;" width="928" height="483" xlink:href="../../../../IMG_2851.jpg"  transform="matrix(8.676785e-02 0 0 8.534055e-02 120.3001 62.9)">
+	</image>
+</g>
+<g id="Layer_4_1_">
+</g>
+<g id="Layer_3_1_">
+	<polygon class="st15" points="134.7,84.2 137,80 142.2,80 144.5,84.1 142.2,88.5 137,88.5 	"/>
+	<polygon class="st15" points="34.3,35.1 36.6,30.9 41.7,30.9 44,35.1 41.7,39.4 36.6,39.4 	"/>
 </g>
 </svg>
