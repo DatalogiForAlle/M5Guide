@@ -128,13 +128,15 @@ Tegn figurer på skærmen
 .. function:: lcd.clear()
               lcd.clear(color)
 
-   Sletter alt på skærmen og farver den sort.
+Sletter alt på skærmen og farver den sort.
 
    Eksempel::
 
      lcd.clear()
 
-   TODO: illustration (før og efter billede)
+   .. figure:: illustrationer/blackscreen.svg
+      :alt: Sort skærm
+      :width: 500px
 
    Farven kan angives ved at angive det valgfrie argument `color`.
    
@@ -142,7 +144,9 @@ Tegn figurer på skærmen
 
      lcd.clear(0xFFFF00)
 
-   TODO: illustration af M5StickC med helt gul skærm
+   .. figure:: illustrationer/yellowscreen.svg
+      :alt: gul skærm
+      :width: 500px
 
    :param valgfri color: Talværdi: farve på omrids
 
@@ -158,7 +162,9 @@ Tegn figurer på skærmen
 
      lcd.rect(10, 10, 40, 30)
    
-   TODO: illustration med sort baggrund og hvidt rektangel
+   .. figure:: illustrationer/whiterect.svg
+      :alt: Hvidt rektangel 
+      :width: 500px
 
    Farver på omrids og udfyldning kan ændres med de to valgfrie
    argumenter `color` og `fillcolor`. Farverne angives som hexadecimal
@@ -168,19 +174,30 @@ Tegn figurer på skærmen
 
      lcd.rect(10, 10, 40, 30, color=0xFF0000)
 
+   .. figure:: illustrationer/redlinerect.svg
+      :alt: rødt rektangel
+      :width: 500px
+
+
    Eksempel med rødt omrids og blå udfyldning::
 
      lcd.rect(10, 10, 40, 30, color=0xFF0000, fillcolor=0x0000FF)
 
-   TODO: illustrationer af begge eksempler
-     
+   .. figure:: illustrationer/redlinebluefillrect.svg
+      :alt: Blåt rektangel med rødt omrids
+      :width: 500px
+
    Hvis man vil tegne en firkant uden omrids, bør man sætte
    omridsfarve (`color`) og udfyldningsfarve (`fillcolor`) til at være
    samme farve.
 
    Eksempel på rødt rektangel::
 
-     lcd.rect(10, 10, 40, 30, color=0xFF0000, fillcolor=0xFF0000) 
+     lcd.rect(10, 10, 40, 30, color=0xFF0000, fillcolor=0xFF0000)
+
+   .. figure:: illustrationer/redredrect.svg
+      :alt: Rødt rektangel
+      :width: 500px 
 
    :param x: Talværdi: x-koordinat for rektanglet (øverste venstre hjørne)
    :param y: Talværdi: y-koordinat for rektanglet (øverste venstre hjørne)
@@ -202,7 +219,9 @@ Tegn figurer på skærmen
 
      lcd.roundrect(10, 10, 30, 40, 7)
 
-   TODO: illustration med let rundede hjørner
+   .. figure:: illustrationer/roundedrect.svg
+      :alt: Afrundede hjørnet rektangel
+      :width: 500px
    
    Som standard tegnes kun et hvidt omrids af rektanglet. Farver på
    omrids og udfyldning kan ændres med de to valgfrie argumenter
@@ -227,13 +246,17 @@ Tegn figurer på skærmen
 
      lcd.line(10, 10, 50, 40)
 
-   TODO: illustration, hvid linje på sort baggrund
+   .. figure:: illustrationer/whiteline.svg
+      :alt: Hvid linje
+      :width: 500px
 
    Farven kan ændres ved at angive argumentet `color`::
 
      lcd.line(10, 10, 50, 40, color=0x00FF00)
 
-   TODO: illustration, grøn linje på sort baggrund
+   .. figure:: illustrationer/greenline.svg
+      :alt: Grøn linje
+      :width: 500px 
 
    :param x1: Talværdi: x-koordinat hvor linjen skal starte
    :param y1: Talværdi: y-koordinat hvor linjen skal starte
@@ -253,7 +276,9 @@ Tegn figurer på skærmen
 
      lcd.triangle(10, 10, 50, 40, 10, 70)
 
-   TODO: illustration, hvor også koordinaterne af de tre hjørner er tegnet ind
+   .. figure:: illustrationer/whitetriangle.svg
+      :alt: Trekant
+      :width: 500px 
 
    Som standard tegnes kun et hvidt omrids af trekanten. Farver på
    omrids og udfyldning kan ændres med de to valgfrie argumenter
@@ -264,7 +289,9 @@ Tegn figurer på skærmen
 
      lcd.triangle(10, 10, 50, 40, 10, 70, color=0xFF0000, fillcolor=0x0000FF)
 
-   TODO: illustration af farvet rektangel
+   .. figure:: illustrationer/colortriangle.svg
+      :alt: Farvet trekant
+      :width: 500px 
 
    :param x1: Talværdi: x-koordinat for trekantens første hjørne 
    :param y1: Talværdi: y-koordinat for trekantens første hjørne
@@ -287,9 +314,11 @@ Tegn figurer på skærmen
 
      lcd.ellipse(40, 40, 20, 10)
    
-   TODO: illustration med sort baggrund og hvid ellipse
+   .. figure:: illustrationer/whiteellipse.svg
+      :alt: Ellipse
+      :width: 500px 
 
-   Som standard tegnes kun et hvidt omrids af rektanglet. Farver på
+   Som standard tegnes kun et hvidt omrids af ellipsen. Farver på
    omrids og udfyldning kan ændres med de to valgfrie argumenter
    `color` og `fillcolor`. Det foregår på samme måde som for
    :func:`lcd.rect`.
@@ -298,8 +327,9 @@ Tegn figurer på skærmen
 
      lcd.ellipse(40, 40, 20, 10, color=0xFF0000, color=0x0000FF)
 
-   TODO: illustration
-
+   .. figure:: illustrationer/colorellipse.svg
+      :alt: Farvet ellipse
+      :width: 500px 
 
    Parametret `opt` kan bruges til at kun tegne nogle dele af ellipsen
    ved at angive et tal mellem 0 og 15. Hvis det ikke angives, tegnes
@@ -326,7 +356,9 @@ Tegn figurer på skærmen
 
      lcd.circle(40, 40, 10)
 
-   TODO: illustration
+   .. figure:: illustrationer/whitecircle.svg
+      :alt: Cirkel
+      :width: 500px 
 
    Som standard tegnes kun et hvidt omrids af cirklen. Farver på
    omrids og udfyldning kan ændres med de to valgfrie argumenter
@@ -351,7 +383,9 @@ Tegn figurer på skærmen
 
      lcd.arc(40, 40, 20, 1, 0, 270)
 
-   TODO: illustration
+   .. figure:: illustrationer/whitearch.svg
+      :alt: Cirkelbue
+      :width: 500px 
 
    Som standard tegnes kun et hvidt omrids af cirklen, men farven kan
    ændres med det valgfrie argument `color`. Det foregår på samme måde
@@ -383,14 +417,18 @@ Tegn figurer på skærmen
 
      lcd.polygon(40, 40, 10, 6)
 
-   TODO: illustration
+   .. figure:: illustrationer/whitepoygon6.svg
+      :alt: 6-kantet polygon
+      :width: 500px 
    
    Argumentet `thick` kan bruges til at ændre tykkelsen af
    omridset. For eksempel kan vi tegne en femkant med 3 pixel omrids::
 
      lcd.polygon(40, 40, 15, 5, thick=2)
 
-   TODO: illustration
+   .. figure:: illustrationer/whitepoygon5.svg
+      :alt: 5-kantet polygon
+      :width: 500px 
 
    Argumentet `rotate` kan bruges til at rotere polygonen et vist
    antal grader (0-360).
@@ -423,6 +461,12 @@ Tegn figurer på skærmen
 
    .. kommentar: til en pixel behøves nok ikke en illustration
 
+   .. kommentar: Den behøves ikke, men er med til at bryde tekst-blokke op
+
+   .. figure:: illustrationer/gulpixel.svg
+      :alt: gul pixel
+      :width: 500px
+
 
 Tegn JPG og BMP billeder på skærmen
 -----------------------------------
@@ -451,14 +495,18 @@ Tegne tekst på skærmen
 
      lcd.text(10, 10, "Hello!")
 
-   TODO: illustration
+   .. figure:: illustrationer/texthello.svg
+      :alt: tekst "Hello!"
+      :width: 500px
      
    Som standard bruges hvid tekstfarve, men det kan ændres via
    argumentet `color`::
 
      lcd.text(10, 10, "Hello!", color=0xFF0000)
 
-   TODO: illustration
+   .. figure:: illustrationer/colortexthello.svg
+      :alt: Rød tekst "Hello!"
+      :width: 500px
 
    Som standard tegnes også en sort baggrund, som teksten tegnes
    på. Hvis du vil slå denne sorte baggrund fra, og gøre baggrunden
@@ -481,7 +529,9 @@ Tegne tekst på skærmen
      lcd.font(lcd.FONT_DejaVu24)
      lcd.text(5, 5, "Hello!")
 
-   TODO: illustration
+   .. figure:: illustrationer/alternatefonttexthello.svg
+      :alt: Alternativ skrifttype tekst "Hello!"
+      :width: 500px
 
    :param font: skal være én af følgende indbyggede værdier:
 

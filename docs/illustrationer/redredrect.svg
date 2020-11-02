@@ -17,8 +17,7 @@
 	.st11{fill:#F7EC13;stroke:#5D5B5C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st12{fill:#282826;stroke:#5D5B5C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st13{display:none;opacity:0.48;}
-	.st14{fill:none;}
-	.st15{fill:#FF0000;}
+	.st14{fill:#FF0000;stroke:#FF0000;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
@@ -170,25 +169,17 @@
 </g>
 <g class="st13">
 	
-		<image style="display:inline;overflow:visible;enable-background:new    ;" width="231" height="439" xlink:href="EF66797547AB8ECB.png"  transform="matrix(0.2052 0 0 0.2052 17.7717 12.852)">
+		<image style="display:inline;overflow:visible;enable-background:new    ;" width="224" height="436" xlink:href="9786C0E95432516.png"  transform="matrix(0.2116 0 0 0.2116 17.7717 11.7619)">
 	</image>
 </g>
 <g id="Layer_4">
 	<g>
 		<rect x="19.7" y="14.4" class="st12" width="41.9" height="82"/>
-		<g>
-			<rect x="26.2" y="20.6" class="st14" width="19.2" height="14.4"/>
-			<path class="st15" d="M44.9,21.1v13.4H26.7V21.1H44.9 M45.9,20.1H25.7v15.4h20.2L45.9,20.1L45.9,20.1z"/>
-		</g>
+		<rect x="25.7" y="20.1" class="st14" width="20.2" height="15.4"/>
 	</g>
 	<g>
 		<rect x="119.3" y="62.9" class="st12" width="82" height="41.9"/>
-	</g>
-	<g>
-		<g>
-			<rect x="126.4" y="69.4" class="st14" width="19.2" height="14.4"/>
-			<path class="st15" d="M145.1,69.9v13.4h-18.2V69.9H145.1 M146.1,68.9h-20.2v15.4h20.2L146.1,68.9L146.1,68.9z"/>
-		</g>
+		<rect x="125" y="68.8" class="st14" width="20.2" height="15.4"/>
 	</g>
 </g>
 <g id="Layer_3">
