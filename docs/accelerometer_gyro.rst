@@ -3,32 +3,88 @@ Accelerometer & Gyroskop
 
 Grundlæggende
 -------------
+M5StickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består
+af et accelerometer og et gyroskop. Bevægelsessensoren kan fx bruges
+til at måle:
 
+ * hvor hurtigt man roterer (gyroskop)
+ * hvor hurtigt man accelererer eller bremser (accelerometer)
+ * tyngdekraften fra jorden, og dermed hvilken retning er nedad (accelerometer)
 
-M5stickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består af et accelerometer og et gyroskop.  En bevægelsessensor af denne type kaldes en IMU - inertial measurement unit. Og denne konkrete IMU har 6 grader af frihed. 
+Bevægelsessensoren er derfor vigtig komponent i fx i biler til at
+udløse airbags, i fly til styring. I mobiltelefoner og smart watches
+bruges bevægelsessensoren fx til at finde ud af hvilken vej den
+vender, eller til den indbyggede skridttæller.
+
+En bevægelsessensor af denne type kaldes en IMU - *inertial
+measurement unit*, og den IMU der er indbygget i M5StickC har 6 grader
+af frihed.
 
 .. figure:: illustrationer/6degreeaxis.svg
    :alt: 6 graders frihed, plus pitch, roll og yaw 
-   :width: 500px
+   :width: 300px
 
+TODO: evt. tilføj labels på figuren med de 6 frihedsgrader?
+ * rotationshastighed om x-aksen
+ * rotationshastighed om y-aksen
+ * rotationshastighed om z-aksen
+ * acceleration i x-retning
+ * acceleration i y-retning
+ * acceleration i z-retning
 
+TODO: beskriv hvordan man indlæser biblioteket
+
+           
 Accelerometer
 ^^^^^^^^^^^^^
-Accelerometeret registrerer den acceleration hvormed M5stick bevæges i retning frem/tilbage/op/ned langs en akse. Man kan forestille sig at hver akse er forsynet med en lille fjeder med en vægt, og så måler om fjederen bliver strakt eller trykket sammen. Tyngdekraften vil også påvirke accelerometeret, hvis "fjederen" er placeret i op/ned-aksen, men ikke hvis den ligger vandret. Enhver flytning af sensoren vil udløse ændringer, men kun mens sensoren får ændret sin hastighed - ikke hvis den bevæger sig med jævn hastighed eller ligger stille.
-Accelerometeret kan altså ikke direkte bruges til at måle en placering, men afslører derimod kraften bag en bevægelse. Accelerometeret kan i sig selv anvendes til f.eks. at registrere ryst.  
+
+Accelerometeret registrerer den acceleration hvormed M5StickC bevæges i
+retning frem/tilbage eller op/ned langs en akse i tre dimensioner.
+
+Man kan forestille sig at hver akse er forsynet med en lille fjeder
+med en vægt, og så måler om fjederen bliver strakt eller trykket
+sammen.
 
 .. figure:: illustrationer/accel.svg
    :alt: acceleration langs x-, y-, z-aksen. 
    :width: 300px
 
+TODO: forklar via eksempler, fx at når man holder den stille med
+skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0, 1.0)`` (tjek efter om det er rigtigt)
+
+
+
+.. Usikkert om nedenstående skal med og gemmes som kommentar ind til
+   videre
+
+   Tyngdekraften vil også påvirke accelerometeret, hvis "fjederen" er
+   placeret i op/ned-aksen, men ikke hvis den ligger vandret.
+
+   Enhver flytning af sensoren vil udløse ændringer, men kun mens
+   sensoren får ændret sin hastighed - ikke hvis den bevæger sig med jævn
+   hastighed eller ligger stille.  Accelerometeret kan altså ikke direkte
+   bruges til at måle en placering, men afslører derimod kraften bag en
+   bevægelse. Accelerometeret kan i sig selv anvendes til f.eks. at
+   registrere ryst.
+
+
 
 Gyroskop
 ^^^^^^^^
-Gyroskopet registrerer rotation omkring en akse. 
+Gyroskopet registrerer rotationshastighed omkring en
+akse. Rotationshastigheden måles i antal grader per sekund.
 
 .. figure:: illustrationer/gyro.svg
-   :alt: gyroskop, drejning x-, y-, z-aksen. 
+   :alt: Gyroskop, drejning x-, y-, z-aksen. 
    :width: 190px
+
+TODO: forklar hvordan man aflæser gyroskopet i kode
+           
+Hvis vi for eksempel starter med at holde M5StickC helt stille, så er
+Gyroskop aflæsningen ``(0, 0, 0)``, da den ikke roteres. Roterer vi
+den langsomt rundt om x aksen, fx med 30 grader hvert sekund, så vil
+Gyroskop-aflæsningen give ``(30, 0, 0)``.
+
 
 
 
@@ -56,10 +112,12 @@ Nu kan man ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra ac
 
 .. image:: illustrationer/acc.gif
 
+TODO: Super animation, men kan man fjerne den sorte bjælke i toppen og bunden af GIF'en?
+           
 På tilsvarende måde kan man hente gyroskopmålingerne ved at bruge ``myIMU.gyro``
 
 x,y,z 
-^^^^^
+-----
 
 Hvis man skal bruge sensorens x y z målinger separeret, kan man gemme dem som enkeltstående variabler::
 
