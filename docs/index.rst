@@ -32,6 +32,7 @@ Brugerguide
    wifi
    tid
    stroem
+   sensorfusion
 
 
 Videre med M5StickC og Python
