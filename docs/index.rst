@@ -22,6 +22,7 @@ Første skridt
    :maxdepth: 2
 
    komigang
+   tekniskespec
 	
 
 * Tutorial(s)
