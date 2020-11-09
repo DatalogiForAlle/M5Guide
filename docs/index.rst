@@ -17,9 +17,14 @@ nødvendige for at programmere en M5StickC.
 
 
 Første skridt
-----------
- * Kom i gang med M5StickC og Mu-editoren
- * Tutorial(s)
+-------------
+.. toctree::
+   :maxdepth: 2
+
+   komigang
+	
+
+* Tutorial(s)
 
 
 Brugerguide
