@@ -45,17 +45,28 @@ Når Mu er downloaded og startet tilsluttes M5StickC til computerne via det medf
 
 Hvis du har dette symbol nederst i højre hjørne |NOTCONNECTED| er din M5StickC ikke tilsluttet. Prøv at genstarte MU. Hvis det ikke virker, så prøv at genstarte hele computeren. Stadig problemer? Prøv at tilslutte M5Stick til en anden USB port og genstart. Hvis du arbejder på Macbook, og ingen af dine USB porte ser ud til at virke, kan du prøve at resette SMC'en - følg denne guide https://macpaw.com/how-to/fix-usb-ports-on-mac. Hold M5Stick tilsluttet mens du resetter.  
   
-Klik på Mode |MODE| og vælg ESP MicroPython |ESP| Du er nu klar til at skrive din første kode::   
+Klik på Mode |MODE| og vælg ESP MicroPython |ESP| Du er nu klar til at skrive din første kode. Du placere cursoren der hvor der står ``# Write your code here :-)`` og skriver følgende::   
 
 
-   from m5stack import lcd
-   lcd.clear(000000)
-   lcd.text(10,10,"Hello World!")
+   from m5stack import M5Led
 
-Når du har skrevet ovenstående i MU så klik på Run |RUN| og du skulle nu kunne se noget skrift på skærmen.
+   # Tænd for LED'en
+   M5Led.on()
 
-.. figure:: illustrationer/texthello.svg
-   :alt: Hello på skærmen
+Hvis du starter en linje med ``#`` bliver det forstået som en kommentar til koden, og får ikke betydning for dit program. Når du har skrevet ovenstående i MU så klik på Run |RUN| og du skulle nu kunne se den indbyggede LED lyse.
+
+.. figure:: illustrationer/led.svg
+   :alt: LED tændt
    :width: 500px
 
+Sluk for led'en ved at ændre i koden så der står::
+
+   from m5stack import M5Led
+
+   # Sluk for LED'en
+   M5Led.off()
+
+og klik på Run |RUN|. 
+
+Tillykke du er nu godt igang! 
 
