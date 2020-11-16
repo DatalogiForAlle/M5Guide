@@ -10,10 +10,10 @@ nødvendige for at programmere en M5StickC.
    :alt: M5StickC
    :width: 400px
 
-**Status:** Guiden er pt. under udvikling. Den nuværende ambition er
- at dække de primære områder, så som: tegne på skærmen, bruge af
- indbyggede sensorer, og eksempler på hvordan eksterne enheder kobles
- på. I fremtiden kan det være andre emner også bliver dækket.
+**Status:** *Guiden er pt. under udvikling. Den nuværende ambition er
+at dække de primære områder, så som: tegne på skærmen, bruge af
+indbyggede sensorer, og eksempler på hvordan eksterne enheder kobles
+på. I fremtiden kan det være andre emner også bliver dækket.*
 
 
 Første skridt

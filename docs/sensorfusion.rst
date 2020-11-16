@@ -68,9 +68,9 @@ forskellige algoritmer, og vi kommer til at bruge en der kaldes et
 opdateres med de nyeste værdier fra accelerometeret og gyroskopet.
 
 Først overføres filen ``fusion.py`` fra din computer til M5StickC:
+https://raw.githubusercontent.com/DatalogiForAlle/M5Guide/master/lib/fusion.py
 
-TODO
-
+TODO: beskriv/vis med video hvordan man overfører filen.
 
 Tjek at det virker ved at importere biblioteket::
 
