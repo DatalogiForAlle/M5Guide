@@ -25,9 +25,8 @@ og hvor høj firkanten skal være.
 
 Koordinatsystemet
 -----------------
-
 For at kunne tegne på skærmen og angive hvor ting skal tegnes hende,
-skal man forstå at koordinatsystemet i computere ikke er helt præcist
+skal man vide at koordinatsystemet i computere ikke er helt præcist
 som i matematik-undervisningen (men tæt på).
 
 På computerskærme bruger man den konvention at koordinatet ``(0, 0)``
@@ -35,18 +34,34 @@ er placeret i det øverste venstre hjørne af skærmen, og at når
 y-værdien stiger, så flyttes koordinatet nedad, og ikke opad, som du
 ellers kender det fra matematik.
 
+Her har vi prøvet at tegne koordinatsystemet ind ovenpå M5StickC:
+
 .. figure:: illustrationer/koordinatsystem.svg
    :alt: M5StickC med koordinatsystem
    :width: 500px
 
+Når du kører ``lcd.rect(10, 20, 30, 50)``, som beskrevet ovenfor, så
+kommer det altså til at se sådan her ud:
+
+TODO: illustration
+
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
-kan du læse en beskrivelse for hver af dem om hvordan de virker.
+kan du læse en beskrivelse for hver af dem om hvordan de virker. Fx er
+der :func:`lcd.ellipse`, til at tegne ellipser og cirkler, eller
+:func:`lcd.line` til at tegne linjer, eller :func:`lcd.triangle` til
+at tegne trekanter.
+
+Du kan også tegne tekst på skærmen med :func:`lcd.text`.
+
+TODO: eventuelt eksempel hvor vi bruger en masse tegne funktioner, bare
+for at illustrere mulighederne?
 
 Farveangivelser
 ---------------
 Som standard vil alle tegnefunktionerne tegne figurer med et hvidt
 omrids, men ellers gennemsigtige (ingen udfyldning). Farverne kan
-ændres ved at angive et eller to ekstra farveargumenter til funktionerne.
+ændres ved at angive et eller to ekstra farveargumenter til
+funktionerne.
 
 Hvis vi for eksempel vil tegne firkanten med grøn farve som omrids, kan vi skrive::
 
