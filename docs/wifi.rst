@@ -13,6 +13,7 @@ modulet ``wifiCfg``::
 
 Derefter kan I forbinde til et wifi hotspot ved at angive dets navn og
 password::
+
   wifiCfg.doConnect("MitWifiNet", "WifiPassword")
 
 

@@ -19,13 +19,12 @@ på. I fremtiden kan det være andre emner også bliver dækket.*
 Første skridt
 -------------
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    komigang
    tekniskespec
-	
-
-* Tutorial(s)
+   onebuttonwearable
+   shortyshower
 
 
 Brugerguide
@@ -78,7 +77,7 @@ Avanceret
 
 
 Leder du efter noget specifikt?
----------------------
+-------------------------------
 * :ref:`Søgning <search>` - søg i hele dokumentationen
 
 * :ref:`genindex` - register over alle kommandoer

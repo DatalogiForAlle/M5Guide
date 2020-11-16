@@ -38,7 +38,7 @@ Et flys placering i luften beskrives ved følgende tre vinkler:
   </video>
 
 Hvordan beregner man `pitch` og `roll` på M5StickC?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 På M5StickC kan vi ikke beregne `yaw`, da der ikke er et kompas, men
 `pitch` og `roll` kan beregnes ud fra de *rå* accelerometer og

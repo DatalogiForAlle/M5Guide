@@ -180,7 +180,7 @@ Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'
 
 
 EKSEMPEL: Gemme IMU data i .csv format
-----------------------------
+--------------------------------------
 
 For at få gemt målinger fra bevægelsessensoren kan følgende kode benyttes::
 
@@ -215,7 +215,7 @@ Der er basis for at kludre rigtig meget rundt i tallene - så se dig godt for.
 
 
 EKSEMPEL: Registrer bevægelse
--------------------
+-----------------------------
 
 Som illustration på hvordan accelerometeret kan bruges er her eksemplekode:: 
 
