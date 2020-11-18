@@ -1,6 +1,8 @@
 Tutorial: One Button Wearable til patienter med PTSD
 ====================================================
 
+.. todo:: skriv første udkast til tutorial
+
 Formål
 ------
 En tutorial der viser hvordan man bruger den indbyggede knap, logger

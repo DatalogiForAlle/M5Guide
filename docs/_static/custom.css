@@ -10,3 +10,7 @@ dl > dd:last-child > :last-child {
 a.image-reference:hover {
     border-bottom: none !important;
 }
+
+.admonition {
+    background-color: orange !important;
+}

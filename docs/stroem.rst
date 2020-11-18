@@ -1,6 +1,11 @@
 Strøm og batteri
 ================
-TODO
+
+.. todo:: lav målinger af batteri-levetid: med skærmen slukket, med
+          skærmen tændt med hvid i alle pixels, med skærmen slukket og
+          WiFi tændt (hent noget data hvert 30. sekund)
+
+.. todo:: skriv dokumentation af alle nedenstående
 
 .. function:: axp.getChargeState()
 
@@ -24,13 +29,11 @@ TODO
 
 Juster skærmens lysstyrke
 -------------------------
-TODO
-
 ``axp.setLcdBrightness(30)``
 
 Tips til at spare strøm
 -----------------------
-TODO
+ .. todo:: skriv sektion
 
  * Begræns brug af WiFi
  * Skru ned for skærmens lysniveau

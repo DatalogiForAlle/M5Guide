@@ -85,3 +85,9 @@ Leder du efter noget specifikt?
 .. * :ref:`modindex`
 
 
+TODO-liste for M5Guiden
+-----------------------
+
+.. toctree::
+
+   todos

@@ -14,10 +14,10 @@ Hvad kan man med en M5StickC?
 
 Overblik over M5StickC
 ----------------------
-TODO illustration
+.. todo:: illustration
  - foto af M5StickC skilt ad, så man kan se hvordan den ser ud indvendigt
 
-TODO illustration
+.. todo:: illustration
  - foto af hele M5StickC
 
 Begge fotos med labels og pile der angiver komponenternes placering

@@ -1,6 +1,8 @@
 Tutorial: Shorty Shower
 =======================
 
+.. todo:: overfør fra TeX filer
+
 Formål
 ------
 Tutorial der viser hvordan man bruger eksterne komponenter, og binder

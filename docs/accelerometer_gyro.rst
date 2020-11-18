@@ -24,7 +24,7 @@ af frihed.
    :alt: 6 graders frihed, plus pitch, roll og yaw 
    :width: 300px
 
-TODO: evt. tilføj labels på figuren med de 6 frihedsgrader?
+.. todo:: evt. tilføj labels på figuren med de 6 frihedsgrader?
  * rotationshastighed om x-aksen
  * rotationshastighed om y-aksen
  * rotationshastighed om z-aksen
@@ -32,7 +32,7 @@ TODO: evt. tilføj labels på figuren med de 6 frihedsgrader?
  * acceleration i y-retning
  * acceleration i z-retning
 
-TODO: beskriv hvordan man indlæser biblioteket
+.. todo:: beskriv hvordan man indlæser biblioteket
 
            
 Accelerometer
@@ -49,8 +49,9 @@ sammen.
    :alt: acceleration langs x-, y-, z-aksen. 
    :width: 300px
 
-TODO: forklar via eksempler, fx at når man holder den stille med
-skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0, 1.0)`` (tjek efter om det er rigtigt)
+.. todo:: forklar via eksempler, fx at når man holder den stille med
+          skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0,
+          1.0)`` (tjek efter om det er rigtigt)
 
 
 
@@ -78,7 +79,7 @@ akse. Rotationshastigheden måles i antal grader per sekund.
    :alt: Gyroskop, drejning x-, y-, z-aksen. 
    :width: 190px
 
-TODO: forklar hvordan man aflæser gyroskopet i kode
+.. todo:: forklar hvordan man aflæser gyroskopet i kode
            
 Hvis vi for eksempel starter med at holde M5StickC helt stille, så er
 Gyroskop aflæsningen ``(0, 0, 0)``, da den ikke roteres. Roterer vi
@@ -112,7 +113,7 @@ Nu kan man ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra ac
 
 .. image:: illustrationer/acc.gif
 
-TODO: Super animation, men kan man fjerne den sorte bjælke i toppen og bunden af GIF'en?
+.. todo:: Super animation, men kan man fjerne den sorte bjælke i toppen og bunden af GIF'en?
            
 På tilsvarende måde kan man hente gyroskopmålingerne ved at bruge ``myIMU.gyro``
 

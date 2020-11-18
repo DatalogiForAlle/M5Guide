@@ -43,7 +43,7 @@ Her har vi prøvet at tegne koordinatsystemet ind ovenpå M5StickC:
 Når du kører ``lcd.rect(10, 20, 30, 50)``, som beskrevet ovenfor, så
 kommer det altså til at se sådan her ud:
 
-TODO: illustration
+.. todo:: illustration
 
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
 kan du læse en beskrivelse for hver af dem om hvordan de virker. Fx er
@@ -53,7 +53,7 @@ at tegne trekanter.
 
 Du kan også tegne tekst på skærmen med :func:`lcd.text`.
 
-TODO: eventuelt eksempel hvor vi bruger en masse tegne funktioner, bare
+.. todo:: eventuelt eksempel hvor vi bruger en masse tegne funktioner, bare
 for at illustrere mulighederne?
 
 Farveangivelser
@@ -491,7 +491,7 @@ Tegn JPG og BMP billeder på skærmen
    Indlæser en billedfil med navnet `filename`, som er placeret på
    M5StickC'ens filsystem. Understøtter kun ``.bmp`` og ``.jpg`` filer.
 
-   TODO: link til guide hvor man kan se hvordan man overfører filer
+   .. todo:: link til guide hvor man kan se hvordan man overfører filer
               
    :param x: Talværdi: x-koordinat hvor billedet skal tegnes
    :param y: Talværdi: y-koordinat hvor billedet skal tegnes

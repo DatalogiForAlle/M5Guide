@@ -137,4 +137,7 @@ en såkaldt `dictionary`, man kan slå op i:
 
 Logge data til en database på Airtable.com
 ------------------------------------------
-TODO
+
+.. todo:: skriv om hvordan man kan logge data til Airtable. Evt. video
+          om hvordan man opretter en database på Airtable, og finder
+          de rigtige URL's til at skrive / læse

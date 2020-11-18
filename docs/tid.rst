@@ -46,6 +46,8 @@ eksempel har de danske universiteter en fælles server der hedder
 For at indstille uret via en tidsserver, skal vi bruge et ekstra
 modul, der ikke følger med en M5StickC. <<link til fil på Github>>
 
+.. todo:: indsæt link til modulet
+
 Når I har overført filen til jeres M5StickC, kan I importere den via::
 
   import m5ntp
