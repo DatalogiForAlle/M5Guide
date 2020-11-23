@@ -1,3 +1,7 @@
+.. |PLOT| image:: illustrationer/mubilleder/plotter.jpg
+   :height: 20
+   :width: 20
+
 Accelerometer & Gyroskop
 ========================
 
@@ -32,7 +36,12 @@ af frihed.
  * acceleration i y-retning
  * acceleration i z-retning
 
-.. todo:: beskriv hvordan man indlæser biblioteket
+
+For at starte med at bruge bevægelsessensoren, skal imu-biblioteket importeres og objektet ``myIMU`` initieres::
+
+	import imu
+	
+	myIMU = imu.IMU()
 
            
 Accelerometer
@@ -49,9 +58,35 @@ sammen.
    :alt: acceleration langs x-, y-, z-aksen. 
    :width: 300px
 
-.. todo:: forklar via eksempler, fx at når man holder den stille med
-          skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0,
-          1.0)`` (tjek efter om det er rigtigt)
+
+Ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra accelerometeret.:: 
+
+
+
+   import imu
+   import time
+   
+   myIMU = imu.IMU()
+
+   while True:
+   	time.sleep_ms(10)
+    	print(myIMU.acceleration)
+
+
+
+Klik **Plotter** |PLOT| i mu-editoren, for at få vist en graf. Bevæg M5stickC og se at dine bevægelse bliver registreret
+
+
+.. image:: illustrationer/acc.gif
+
+
+Når man holder M5StickC stille med skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0, 1.0)``
+
+.. figure:: illustrationer/tyngdeAccel.svg
+   :alt: acceleration langs x-, y-, z-aksen. 
+   :width: 300px
+
+
 
 
 
