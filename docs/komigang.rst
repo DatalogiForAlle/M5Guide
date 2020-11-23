@@ -29,16 +29,23 @@ Følg instrukserne og download Mu-editoren her:
 https://codewith.mu/en/download Det er vigtigt at downloade Alpha
 versionen for at kunne arbejde med M5StickC.
 
-.. todo:: screenshot fra download siden, med pil mod de links man skal trykke på
+.. figure:: illustrationer/mubilleder/downloadMU.jpg
+   :alt: MU download skærm
+   :width: 500px
 
-Har du problemer med M5StickC på Mac? Læs :ref:`sektionen i bunden af
+Første gang Mu åbner bliver du bedt om at vælge tilstand - **Select Mode**. 
+Her skal du vælge |ESP| **ESP MicroPython** for at arbejde med M5StickC. Du kan altid vælge en anden tilstand ved at klikke øverst til venstre |MODE| 
+
+
+.. figure:: illustrationer/mubilleder/Mustart.png
+   :alt: MU opstart
+   :width: 500px
+
+Har du problemer med MU på Mac? Læs :ref:`sektionen i bunden af
 denne side <mu-on-mac-issues>`
 
 M5StickC
 --------
-
-.. todo:: screenshot af Mu ved første gang den åbner - med "mode"
-          vælgeren, der åbner automatisk første gang
 
 Når Mu er downloaded og startet tilsluttes M5StickC til computerne via
 det medfølgende USB-C kabel. Mu skulle gerne selv finde M5StickC og du
@@ -53,37 +60,31 @@ M5StickC ikke tilsluttet. Prøv eventuelt at koble den til og fra,
 eller bruge en anden USB-port. Hvis det stadig ikke virker, så læs
 :ref:`fejlsøgningsguiden nedenfor <troubleshooting_guide>`.
 
+Har du problemer med M5StickC på Mac? Læs :ref:`sektionen i bunden af
+denne side <mu-on-mac-issues>`
+
 Dit første program til M5StickC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: er det ikke lidt sjovere at skrive "Hello world" på skærmen?
-          (slet ikke denne sektion, men flyt til en anden side om
-          LED'er, inkl. LED-strip?)
 
-Klik på Mode |MODE| og vælg ESP MicroPython |ESP| Du er nu klar til at
-skrive din første kode. Du placere cursoren der hvor der står ``# Write your code here :-)``
+Du er nu klar til at skrive din første kode. Du placere cursoren der hvor der står ``# Write your code here :-)``
 og skriver følgende::
 
+   # Importer inbygget bibliotek for at arbejde med skærmen
+   from m5stack import lcd
+   
+   # Skriver første linje
+   lcd.text(10, 10, "Hello")
+   # Skriver næste linje
+   lcd.text(10, 25, "World!")
 
-   from m5stack import M5Led
 
-   # Tænd for LED'en
-   M5Led.on()
+Hvis du starter en linje med ``#`` bliver det forstået som en kommentar til koden, og får ikke betydning for dit program. Det kan være smart at skrive kommentarer undervejs, så man altid senere kan huske hvorfor man skrev som man gjorde. Når du har skrevet ovenstående i Mu så klik på Run |RUN| og du skulle nu kunne se noget skrift på M5StickCs lcd skærm.
 
-Hvis du starter en linje med ``#`` bliver det forstået som en kommentar til koden, og får ikke betydning for dit program. Når du har skrevet ovenstående i Mu så klik på Run |RUN| og du skulle nu kunne se den indbyggede LED lyse.
-
-.. figure:: illustrationer/led.svg
-   :alt: LED tændt
-   :width: 500px
-
-Sluk for led'en ved at ændre i koden så der står::
-
-   from m5stack import M5Led
-
-   # Sluk for LED'en
-   M5Led.off()
-
-og klik på Run |RUN|. 
+   .. figure:: illustrationer/texthelloworld.svg
+      :alt: tekst "Hello!"
+      :width: 500px
+     
 
 Tillykke du er nu godt igang! 
 
@@ -107,6 +108,10 @@ der måske kan løse det.
 
 Problemer med at åbne Mu på Mac?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. figure:: illustrationer/mubilleder/muMacOpen1.png
+   :alt: open
+   :width: 500px
+
 Hvis du er Mac-bruger og ser en besked om, at programmet ikke kan
 åbnes, fordi det stammer fra en ukendt udvikler eller ikke blev hentet
 fra App Store, skal du gøre følgende:
@@ -114,7 +119,13 @@ fra App Store, skal du gøre følgende:
 	* Finde programmet i *Finder*. 
 	* Holde *control* nede og klikke - eller højreklikke, hvis du har mus tilsluttet. 
 	* Der dukker nu en menu frem og øverst kan du vælge *open*. 
+	* Der vil nu dukke et vindue op, hvor du igen vælger *open*
 	* Fremover vil programmet åbne, som alle andre programmer. 
+
+.. figure:: illustrationer/mubilleder/macOpenMu.png
+   :alt: open
+   :width: 500px
+
 
 
 M5StickC bliver ikke opdaget af Mu (Windows)
