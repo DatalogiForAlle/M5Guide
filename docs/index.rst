@@ -33,6 +33,7 @@ Brugerguide
    :maxdepth: 2
 
    tegne
+   knapper
    accelerometer_gyro
    wifi
    tid

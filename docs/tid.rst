@@ -1,3 +1,5 @@
+.. _tid_og_dato:
+
 Tid og dato
 ===========
 M5StickC har et indbygget ur, men det holder kun så længe der er strøm
