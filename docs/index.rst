@@ -24,7 +24,7 @@ Første skridt
    komigang
    tekniskespec
    onebuttonwearable
-   shortyshower
+..   shortyshower
 
 
 Brugerguide

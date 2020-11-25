@@ -63,8 +63,47 @@ Nu burde din wearable både kunne registrere knaptryk og
 tidspunktet. Det næste skridt er så at skrive tidspunkterne til en
 fil.
 
-- Hvad er .csv?
-- Eksempel på filformatet vi vil have ud af det
+Det vi har tænkt os er at lave en fil med en linje for hver tidspunkt
+der er trykket på knappen. Fx kunne det se sådan ud::
+
+  time
+  10:48:56
+  10:48:57
+  15:24:58
+  15:24:59
+  15:32:59
+  15:33:00
+  15:33:00
+  15:34:48
+  15:34:48
+  15:34:49
+  15:34:50
+  16:07:51
+  16:07:51
+  18:10:52
+  18:10:52
+
+Dette er en såkaldt CSV-fil, hvor CSV står for comma-separated values
+og som kan åbnes af fx Excel. CSV-filer kan normalt have flere
+kolonner adskilt af komma eller semikolon, men i det her simple
+program tager vi kun klokkeslættet (det er en opgave til læseren også
+at gemme datoen).
+
+Når vi vil skrive en linje tekst i slutningen af en fil i Python, kan
+det gøres med følgende linjer::
+
+    timestring = "15:32:59"          # det vi gerne vil skrive
+    file = open("timelog.csv", "a")  # åbn filen
+    file.write(timestring + "\n")    # skriv teksten + et linjeskift
+    file.close()                     # luk filen
+    
+**Opgave:** Tast ovenstående ind i dit, sådan at der skrives
+``"der er blevet trykket på knappen"`` til filen, hver gang man trykker på knappen.
+
+For at kunne bruge det tidspunkt i har indlæst tidligere, og skrive
+det til filen, skal vores ``timestring`` sættes til::
+
+  timestring = "{:02d}:{:02d}:{:02d}".format(hour, minute, second)
 
 Overføre filen til computeren
 -----------------------------
