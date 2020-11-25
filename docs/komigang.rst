@@ -85,7 +85,7 @@ Dit første program til M5StickC
 Du er nu klar til at skrive din første kode. Du placere cursoren der
 hvor der står ``# Write your code here :-)`` og skriver følgende::
 
-   # Importer inbygget bibliotek for at arbejde med skærmen
+   # Importer indbygget bibliotek for at arbejde med skærmen
    from m5stack import lcd
    
    # Skriver første linje
@@ -104,10 +104,8 @@ M5StickCs lcd skærm.
    .. figure:: illustrationer/texthelloworld.svg
       :alt: tekst "Hello!"
       :width: 500px
-     
 
 Tillykke du er nu godt igang! 
-
 
 Hvis du vil vide mere om Mu-editoren, så har holdet bag Mu-editoren
 har en række tutorials, der kan gøre dig fortrolig med hvordan Mu
@@ -136,15 +134,24 @@ Hvis du er Mac-bruger og ser en besked om, at programmet ikke kan
 åbnes, fordi det stammer fra en ukendt udvikler eller ikke blev hentet
 fra App Store, skal du gøre følgende:
 
-	* Finde programmet i *Finder*. 
-	* Holde *control* nede og klikke - eller højreklikke, hvis du har mus tilsluttet. 
-	* Der dukker nu en menu frem og øverst kan du vælge *open*. 
-	* Der vil nu dukke et vindue op, hvor du igen vælger *open*
-	* Fremover vil programmet åbne, som alle andre programmer. 
+* Finde programmet i *Finder*. 
+* Holde *control* nede og klikke - eller højreklikke, hvis du har mus tilsluttet. 
+* Der dukker nu en menu frem og øverst kan du vælge *open*. 
+* Der vil nu dukke et vindue op, hvor du igen vælger *open*
+* Fremover vil programmet åbne, som alle andre programmer. 
 
 .. figure:: illustrationer/mubilleder/macOpenMu.png
    :alt: open
    :width: 500px
+
+Hvis det stadig ikke virker, kan du prøve følgende, der slår nogle
+sikkerhedstjeks fra:
+
+* Åbne en Terminal
+* Indtaste kommandoen ``sudo spctl --master-disable``
+* Indtaste dit password og tryk enter
+* For at returnere til de oprindelige indstillinger, kan du køre
+  kommandoen ``sudo spctl --master-enable`` i en terminal.
 
 M5StickC bliver ikke opdaget af Mu (Windows)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -174,6 +181,7 @@ tilsluttet mens du resetter.
 
 .. todo:: link til Mac USB-driver, som i meget sjældne tilfælde er
           nødvendig (Martin graver det frem)
+
 
 Har du stadig problemer?
 ^^^^^^^^^^^^^^^^^^^^^^^^
