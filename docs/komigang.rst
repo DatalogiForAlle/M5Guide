@@ -160,12 +160,13 @@ fra App Store, skal du gøre følgende:
    :alt: open
    :width: 500px
 
-Hvis det stadig ikke virker, kan du prøve følgende, der slår nogle
+Hvis det stadig ikke virker, så prøv først at genstarte computere, og
+hvis det så stadig ikke virker, kan du prøve følgende, der slår nogle
 sikkerhedstjeks fra:
 
-* Åbne en Terminal
-* Indtaste kommandoen ``sudo spctl --master-disable``
-* Indtaste dit password og tryk enter
+* Åben en Terminal
+* Indtast kommandoen ``sudo spctl --master-disable``
+* Indtast dit password og tryk enter
 * For at returnere til de oprindelige indstillinger, kan du køre
   kommandoen ``sudo spctl --master-enable`` i en terminal.
 
