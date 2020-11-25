@@ -25,23 +25,38 @@ guide bruger vi Mu-editoren.
 
 Installation af Mu-editoren
 ---------------------------
-Følg instrukserne og download Mu-editoren her:
-https://codewith.mu/en/download Det er vigtigt at downloade Alpha
-versionen for at kunne arbejde med M5StickC.
 
-.. figure:: illustrationer/mubilleder/downloadMU.jpg
-   :alt: MU download skærm
-   :width: 500px
+Hent denne alpha-udgave af Mu-editoren, som understøtter M5StickC:
 
-Første gang Mu åbner bliver du bedt om at vælge tilstand - **Select Mode**. 
-Her skal du vælge |ESP| **ESP MicroPython** for at arbejde med M5StickC. Du kan altid vælge en anden tilstand ved at klikke øverst til venstre |MODE| 
+- `Hent Mu-editor til Windows (64 bit) <https://s3-eu-west-2.amazonaws.com/mu-builds/windows/mu_2020-10-23_13_42_master_3083c77_64bit.exe>`_
+- `Hent Mu-editor til Mac OS X <https://s3-eu-west-2.amazonaws.com/mu-builds/osx/mu-editor_2020-10-08_22_06_master_e6adf68.zip>`_
+- `Hent Mu-editor til Linux <https://s3-eu-west-2.amazonaws.com/mu-builds/linux/mu_2018-06-12_14_00_master_11bdd93.bin>`_
+
+Næste version af Mu har indbygget support for M5StickC, og udgives omkring
+januar 2021.
+
+..
+   Følg instrukserne og download Mu-editoren her:
+   https://codewith.mu/en/download Det er vigtigt at downloade Alpha
+   versionen for at kunne arbejde med M5StickC.
+
+   .. figure:: illustrationer/mubilleder/downloadMU.jpg
+      :alt: MU download skærm
+      :width: 500px
+
+
+Start Mu
+--------
+
+Første gang Mu åbner bliver du bedt om at vælge en *mode* i dialogen **Select Mode**. 
+Her skal du vælge |ESP| **ESP MicroPython** for at arbejde med M5StickC. Du kan altid vælge en anden *mode* ved at klikke øverst til venstre |MODE| 
 
 
 .. figure:: illustrationer/mubilleder/Mustart.png
    :alt: MU opstart
    :width: 500px
 
-Har du problemer med MU på Mac? Læs :ref:`sektionen i bunden af
+Har du problemer med at åbne Mu på Mac? Læs :ref:`sektionen i bunden af
 denne side <mu-on-mac-issues>`
 
 M5StickC
@@ -60,13 +75,11 @@ M5StickC ikke tilsluttet. Prøv eventuelt at koble den til og fra,
 eller bruge en anden USB-port. Hvis det stadig ikke virker, så læs
 :ref:`fejlsøgningsguiden nedenfor <troubleshooting_guide>`.
 
-Har du problemer med M5StickC på Mac? Læs :ref:`sektionen i bunden af
+Har du problemer med M5StickC? Læs :ref:`sektionen i bunden af
 denne side <mu-on-mac-issues>`
 
 Dit første program til M5StickC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
 Du er nu klar til at skrive din første kode. Du placere cursoren der hvor der står ``# Write your code here :-)``
 og skriver følgende::
 
