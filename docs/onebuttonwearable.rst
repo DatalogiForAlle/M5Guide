@@ -24,7 +24,7 @@ En sådan wearable kan også bruges til registrere andre begivenheder
 osv.).
 
 Vi forudsætter at du har installeret Mu editoren og er gået igennem
-vores :ref:`Kom godt igang` guide.
+vores :doc:`komigang` guide.
 
 Overordnet plan
 ---------------
@@ -45,8 +45,8 @@ Første skridt
 For at komme i gang med at bruge knapperne og registrere tidspunkt,
 skal du først se på disse to sider:
 
-- :ref:`knapper`
-- :ref:`tid_og_dato`
+- :doc:`knapper`
+- :doc:`tid`
 
 Når du har fået arbejdet både med knappen, og hvordan man bruger det
 indbyggede ur, så prøv at lave den følgende opgave, hvor du skal

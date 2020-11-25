@@ -1,5 +1,3 @@
-.. _knapper:
-
 Knaptryk og indbygget LED
 =========================
 M5StickC har to knapper vi kan programmere. Den under skærmen kaldes
@@ -12,6 +10,8 @@ slukke.
 
 
 .. todo:: illustration med angivelse af knapper og LED
+
+.. _knaptryk:
 
 Registrere knaptryk
 -------------------

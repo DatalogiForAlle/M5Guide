@@ -33,8 +33,9 @@ Som standard har M5StickC følgende features:
    * Infrarød sender
    * Mikrofon
    * Batteri - se beskrivelse her: :doc:`stroem`
-   * To programmerbare knapper (Knap A og Knap B)
+   * To programmerbare knapper (Knap A og Knap B) (se :ref:`knaptryk`)
    * Tænd/sluk knap
+   * En indbygget LED (se :ref:`indbygget_led`)
 
 M5StickC forbindes til computeren via det medfølgende USB-C kabel.
 
