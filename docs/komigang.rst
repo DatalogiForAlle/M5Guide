@@ -18,10 +18,26 @@
 Kom godt igang
 ==============
 Der findes forskellige måder at programmere sin M5StickC på. I denne
-guide bruger vi Mu-editoren.
+guide bruger vi MicroPython og Mu-editoren. Man kan også programmere
+den med Arduino, men så skal man søge dokumentation andet steds fra.
 
 .. todo:: video der gennemgår samme trin som denne guide
 
+MicroPython firmware på M5StickC
+--------------------------------
+
+MicroPython er en version af Python 3 der kan køre på
+microcontrollers, som den i M5StickC. Desværre ligger MicroPython ikke
+altid på M5StickC, når man køber dem.
+
+Her er en guide til at lægge nyeste version af deres
+MicroPython firmware på:
+
+1. Download M5Burner fra: https://m5stack.com/pages/download
+2. Installer M5Burner
+3. Tilslut uret - og vælg den rette COM/seriel-port øverst til venstre
+4. Slet den eksisterende firmware ved at trykke på den grønne "Erase"-knap yderst til højre
+5. Tryk STICKC yderst til højre - og Download den første mulighed (UIFlow_StickC, v1.6.6)
 
 Installation af Mu-editoren
 ---------------------------
