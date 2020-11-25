@@ -78,33 +78,6 @@ Input/output muligheder
  - Mikrofon
  - 0.96" farveskærm (160x80 pixels)
 
-Indbygget LED
--------------
-
-For at tænde LED::
-
-   from m5stack import M5Led
-
-   # Tænd for LED'en
-   M5Led.on()
-
-Klik på Run |RUN|. 
-
-.. figure:: illustrationer/led.svg
-   :alt: LED tændt
-   :width: 500px
-
-Sluk for led'en ved at ændre i koden så der står::
-
-   from m5stack import M5Led
-
-   # Sluk for LED'en
-   M5Led.off()
-
-Klik på Run |RUN|. 
-
-
-
 Strøm og tilslutninger
 ^^^^^^^^^^^^^^^^^^^^^^
  - Indbygget genopladeligt batteri (95 mAH, 3.7 volt)
