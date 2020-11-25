@@ -18,15 +18,23 @@ Hvad kan man med en M5StickC?
 
 Overblik over M5StickC
 ----------------------
-.. todo:: illustration
- - foto af M5StickC skilt ad, så man kan se hvordan den ser ud indvendigt
 
-.. todo:: illustration
- - foto af hele M5StickC
+.. figure:: illustrationer/m5stripped.jpg
+   :alt: M5StickC med og uden plastik-case
+   :width: 500px
 
-Begge fotos med labels og pile der angiver komponenternes placering
+
+..
+   .. todo:: illustration
+    - foto af M5StickC skilt ad, så man kan se hvordan den ser ud indvendigt
+
+   .. todo:: illustration
+    - foto af hele M5StickC
+
+   Begge fotos med labels og pile der angiver komponenternes placering
 
 M5stickC er baseret på en microcontroller af typen ESP32. 
+
 Som standard har M5StickC følgende features:
 
    * Bevægelsessensor - se hvordan den bruges her :doc:`accelerometer_gyro`
@@ -39,29 +47,40 @@ Som standard har M5StickC følgende features:
 
 M5StickC forbindes til computeren via det medfølgende USB-C kabel.
 
-Netværksforbindelse
--------------------
-Eksempler på hvad man kan, hvis man bruger WiFi, ESPNOW eller bluetooth.
-
- - Logge data til internettet, gerne illustration af en graf, der
-   viser noget data logget over tid
-
- - Hente data fra hjemmesider, fx hvornår går næste bus? Hvordan er
-   vejret? Hvor meget CO2 udledes lige nu? Hvor meget er blevet lånt
-   på biblioteket i dag? 
 
 Hvad kan hvis man tilslutter eksternt udstyr?
 ---------------------------------------------
-Eksempler på hvad man kan, hvis man tilslutter højtaler,
-fugtighedssensor, muskelsensor, motor, kamera (UnitV)
 
- - eksempler på projekter, gerne med korte videoer
+.. todo:: Eksempler på hvad man kan, hvis man tilslutter ekstra
+    sensorer eller aktuatorer
+
+..
+   Eksempler på hvad man kan, hvis man tilslutter højtaler,
+   fugtighedssensor, muskelsensor, motor, kamera (UnitV)
+
+    - eksempler på projekter, gerne med korte videoer
+
+
+Netværksforbindelse
+-------------------
+
+.. todo:: Eksempler på projekter der forbinder til internettet, eller
+           bruger bluetooth eller ESPNOW
+..
+   Eksempler på hvad man kan, hvis man bruger WiFi, ESPNOW eller bluetooth.
+
+    - Logge data til internettet, gerne illustration af en graf, der
+      viser noget data logget over tid
+
+    - Hente data fra hjemmesider, fx hvornår går næste bus? Hvordan er
+      vejret? Hvor meget CO2 udledes lige nu? Hvor meget er blevet lånt
+      på biblioteket i dag? 
 
 Tekniske specifikationer
 ------------------------
 
-Evt. omform til tabel, eller bare referer til hjemmesiden
-https://m5stack.com/collections/m5-core/products/stick-c
+.. Evt. omform til tabel, eller bare referer til hjemmesiden
+   https://m5stack.com/collections/m5-core/products/stick-c
 
 Microprocessor
 ^^^^^^^^^^^^^^
