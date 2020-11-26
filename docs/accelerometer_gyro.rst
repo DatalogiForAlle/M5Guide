@@ -2,6 +2,10 @@
    :height: 20
    :width: 20
 
+.. |RUN| image:: illustrationer/mubilleder/run.jpg
+   :height: 20
+   :width: 20
+
 Accelerometer & Gyroskop
 ========================
 
@@ -59,7 +63,7 @@ sammen.
    :width: 300px
 
 
-Ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra accelerometeret.:: 
+Ved hjælp af ``myIMU.acceleration`` kan man hente de rå aflæsninger fra accelerometeret.:: 
 
 
 
@@ -74,19 +78,21 @@ Ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra accelerometer
 
 
 
-Klik **Plotter** |PLOT| i mu-editoren, for at få vist en graf. Bevæg M5stickC og se at dine bevægelse bliver registreret
+Klik på **Run** |RUN| og derefter **Plotter** |PLOT| i mu-editoren, for at få vist en graf. Bevæg M5stickC og se at dine bevægelse bliver registreret
 
 
 .. image:: illustrationer/acc.gif
 
+Hvis man skal bruge sensorens x y z målinger separeret, kan man gemme dem som enkeltstående variabler::
 
-Når man holder M5StickC stille med skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0, 1.0)``
+	ax, ay, az = myIMU.acceleration
+
+
+Når man holder M5StickC stille med skærmen opad, så vil man kunne måle cirka ``(0.0, 0.0, 1.0)`` Det er tyngdekraften der påvirker z-aksen. Hvis M5StickC drejes som vist på illustrationerne, vil tyngdekræften påvirke henholdsvis x- og y-aksen.  
 
 .. figure:: illustrationer/tyngdeAccel.svg
    :alt: acceleration langs x-, y-, z-aksen. 
-   :width: 300px
-
-
+   :width: 500px
 
 
 
@@ -114,26 +120,7 @@ akse. Rotationshastigheden måles i antal grader per sekund.
    :alt: Gyroskop, drejning x-, y-, z-aksen. 
    :width: 190px
 
-.. todo:: forklar hvordan man aflæser gyroskopet i kode
-           
-Hvis vi for eksempel starter med at holde M5StickC helt stille, så er
-Gyroskop aflæsningen ``(0, 0, 0)``, da den ikke roteres. Roterer vi
-den langsomt rundt om x aksen, fx med 30 grader hvert sekund, så vil
-Gyroskop-aflæsningen give ``(30, 0, 0)``.
-
-
-
-
-Dataudtræk
-----------
-
-For at starte med at bruge bevægelsessensoren, skal imu-biblioteket importeres og objektet ``myIMU`` initieres::
-
-	import imu
-	
-	myIMU = imu.IMU()
-
-Nu kan man ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra accelerometeret. Klik **Plotter** i mu-editoren, for at få vist en graf. Bevæg M5stickC og se at dine bevægelse bliver registreret::
+Ved at bruge ``myIMU.gyro`` kan man få vist de rå gyroskop data::
 	
 	import imu
 	import time
@@ -142,27 +129,19 @@ Nu kan man ved hjælp af ``myIMU.acceleration`` hente de rå aflæsninger fra ac
 
 	while True:
     		time.sleep_ms(10)
-    		print(myIMU.acceleration)
-
-
-
-.. image:: illustrationer/acc.gif
-
-.. todo:: Super animation, men kan man fjerne den sorte bjælke i toppen og bunden af GIF'en?
+    		print(myIMU.gyro)
            
-På tilsvarende måde kan man hente gyroskopmålingerne ved at bruge ``myIMU.gyro``
-
-x,y,z 
------
 
 Hvis man skal bruge sensorens x y z målinger separeret, kan man gemme dem som enkeltstående variabler::
 
-	ax, ay, az = myIMU.acceleration
 	gx, gy, gz = myIMU.gyro
 
+Hvis vi for eksempel starter med at holde M5StickC helt stille, så er
+Gyroskop aflæsningen ``(0, 0, 0)``, da den ikke roteres. Roterer vi
+den langsomt rundt om x aksen, fx med 30 grader hvert sekund, så vil
+Gyroskop-aflæsningen give ``(30, 0, 0)``.
 
 
- 
 
 Gemme data
 ----------

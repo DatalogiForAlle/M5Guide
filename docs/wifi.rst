@@ -1,3 +1,12 @@
+.. |SIGNUP| image:: illustrationer/airtable/signup.png
+   :height: 25
+   :width: 80
+
+.. |CREATE| image:: illustrationer/airtable/create.png
+   :height: 25
+   :width: 90
+
+
 Forbindelse til internettet
 ===========================
 
@@ -138,6 +147,65 @@ en såkaldt `dictionary`, man kan slå op i:
 Logge data til en database på Airtable.com
 ------------------------------------------
 
-.. todo:: skriv om hvordan man kan logge data til Airtable. Evt. video
-          om hvordan man opretter en database på Airtable, og finder
-          de rigtige URL's til at skrive / læse
+Opret en gratis konto på airtable.com |SIGNUP| Følg instruktionerne og færdiggør opstarten ved at klikke op **Create workspace**  |CREATE|. Tilføj en ny base. Navngiv den og klik dig ind på den. 
+
+.. figure:: illustrationer/airtable/startbase.png
+      :alt: opret ny base
+      :width: 500px
+
+For at kunne sende og modtage data fra din nye database, har du brug for tre informationer.
+* Din unikke api Key
+* Din bases ID
+* Navnet på dit *table*
+
+Find api key
+^^^^^^^^^^^^
+Øverst til højre er et lille profil-ikon, klik på det og vælg **account** du får nu adgang til en side hvor din personlige api-nøgle kan findes. Klik **generate API key** Marker og kopier nøglen og sæt den ind i din kode. 
+
+.. image:: illustrationer/airtable/finapi.gif
+
+Find din bases ID
+^^^^^^^^^^^^^^^^^
+
+Klik på **Help** øverst til højre og vælg <> API dokumentation. Under Introduction finder du den base ID du har brug for.
+
+.. image:: illustrationer/airtable/baseID.gif
+
+Find navnet på dit *table*
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Navnet på dit første *table* er som udgangspunkt Table 1 - for at kunne linke til et navn der indeholde mellemrum skrives %20. Navnet på dit *table* er altså, med mindre du har ændret det, Table%201. 
+
+Post data på airtable
+^^^^^^^^^^^^^^^^^^^^^
+
+Først skal vi importere de biblioteker vi skal bruge::
+
+	import wifiCfg
+	import urequests
+	import json
+
+Dernæst skal vi bruge API key, baseID og tableName for at sammensætte et link til database og en header der giver os tilladelse til at skrive i databasen.::
+ 
+	apiKey = "Din Unikke API key"
+	baseID = "Din bases ID"
+	tableName = "Table%201" #husk at ændet navnet på dit table her, hvis du har omdøbt det.
+
+	apiURL = "https://api.airtable.com/v0/" + baseID + "/" + tableName
+	headers = {'Authorization': 'Bearer ' + apiKey, 'Content-Type': 'application/json'}
+
+Så skal der bare forbindes til wifi og postes data på airtable. Der er massere af hjælp at hente på **<> API dokumentation**, hvis det er svært at finde ud af strukturen i det data man genre vil sende.::
+
+	wifiCfg.doConnect("MitWifiNet", "WifiPassword")
+
+	if wifiCfg.isconnected():
+    
+        	mes = {"fields":{
+            		"Name": "En note om Airtable",
+            		"Notes": "Airtable kan meget",
+                		}
+            		}
+        	jsondata = json.dumps(mes)
+        	urequests.post(apiURL, headers=headers, data=jsondata)
+ 
+
