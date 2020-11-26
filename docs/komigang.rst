@@ -142,7 +142,7 @@ der måske kan løse det.
 
 Problemer med at åbne Mu på Mac?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. figure:: illustrationer/mubilleder/muMacOpen1.png
+.. figure:: illustrationer/mubilleder/muMacopen.png
    :alt: open
    :width: 500px
 
