@@ -34,7 +34,7 @@ Her er en guide til at lægge nyeste version af deres
 MicroPython firmware på:
 
 1. Download M5Burner fra: https://m5stack.com/pages/download
-2. Installer M5Burner
+2. Installer M5Burner (på Mac *skal* den flyttes til Applications-folderen)
 3. Tilslut uret - og vælg den rette COM/seriel-port øverst til venstre
 4. Slet den eksisterende firmware ved at trykke på den grønne "Erase"-knap yderst til højre
 5. Tryk STICKC yderst til højre - og Download den første mulighed (UIFlow_StickC, v1.6.6)
