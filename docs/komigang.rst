@@ -68,15 +68,18 @@ MicroPython firmware på:
 
 Installation af Mu-editoren
 ---------------------------
-
 Hent og installér denne alpha-udgave af Mu-editoren, som understøtter M5StickC:
 
 - `Hent Mu-editor til Windows (64 bit) <https://s3-eu-west-2.amazonaws.com/mu-builds/windows/mu_2020-10-23_13_42_master_3083c77_64bit.exe>`_
 - `Hent Mu-editor til Mac OS X <https://s3-eu-west-2.amazonaws.com/mu-builds/osx/mu-editor_2020-10-08_22_06_master_e6adf68.zip>`_
 - `Hent Mu-editor til Linux <https://s3-eu-west-2.amazonaws.com/mu-builds/linux/mu_2018-06-12_14_00_master_11bdd93.bin>`_
 
+.. warning:: Nyeste udgave af Mu fra deres hjemmeside, understøtter
+             ikke M5StickC endnu. Derfor er det vigtigt du henter Mu
+             via linkene ovenfor.
+
 Næste version af Mu har indbygget support for M5StickC, og udgives
-omkring januar 2021. Hvis du installerer Mu-editoren fra deres hjemmeside,
+i starten af 2021. Hvis du installerer Mu-editoren fra deres hjemmeside,
 vil Mu ikke fungere ordentligt sammen med M5StickC.
 
 ..
