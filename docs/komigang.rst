@@ -216,19 +216,20 @@ http://www.ftdichip.com/Drivers/CDM/CDM21228_Setup.zip
 
 M5StickC bliver ikke opdaget af Mu (Mac)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-          
+
 Hvis du har dette symbol nederst i højre hjørne |NOTCONNECTED| er din
-M5StickC ikke tilsluttet. Prøv at genstarte Mu. Hvis det ikke virker,
-så prøv at genstarte hele computeren. Stadig problemer? Prøv at
-tilslutte M5Stick til en anden USB port og genstart. Hvis du arbejder
-på Macbook, og ingen af dine USB porte ser ud til at virke, kan du
-prøve at resette SMC'en - følg denne guide
-https://macpaw.com/how-to/fix-usb-ports-on-mac. Hold M5Stick
-tilsluttet mens du resetter.
+M5StickC ikke tilsluttet. Prøv først at tilslutte M5Stick til en anden
+USB port og se om det virker. Hvis det ikke virker, så prøv at
+genstarte computeren.
 
-.. todo:: link til Mac USB-driver, som i meget sjældne tilfælde er
-          nødvendig (Martin graver det frem)
+Hvis det stadig ikke virker, kan det være du manuelt skal installere
+drivere, men Mac OS X burde dog selv finde dem. De kan downloades her:
+https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 
+Hvis det stadig ikke virker, kan du prøve at følge denne guide til
+generel USB-port troubleshooting på Mac:
+https://macpaw.com/how-to/fix-usb-ports-on-mac Lad M5Stick være tilsluttet
+mens du følger guiden.
 
 Har du stadig problemer?
 ^^^^^^^^^^^^^^^^^^^^^^^^
