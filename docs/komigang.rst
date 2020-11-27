@@ -21,7 +21,16 @@ Der findes forskellige måder at programmere sin M5StickC på. I denne
 guide bruger vi MicroPython og Mu-editoren. Man kan også programmere
 den med Arduino, men så skal man søge dokumentation andet steds fra.
 
-.. todo:: video der gennemgår samme trin som denne guide
+Videoguide
+----------
+
+Videoen her forklarer Maja alle trinene i guiden. Har du problemer, så
+finder du en :ref:`troubleshooting_guide` nederst på denne side.
+
+.. raw:: html
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/cD4QTLzDrwQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         
 
 MicroPython firmware på M5StickC
 --------------------------------
