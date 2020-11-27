@@ -133,7 +133,9 @@ hvor der står ``# Write your code here :-)`` og skriver følgende::
 
    # Importer indbygget bibliotek for at arbejde med skærmen
    from m5stack import lcd
-   
+
+   # Slet alt på skærmen
+   lcd.clear()
    # Skriver første linje
    lcd.text(10, 10, "Hello")
    # Skriver næste linje
