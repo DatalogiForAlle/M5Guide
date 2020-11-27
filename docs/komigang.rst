@@ -25,7 +25,6 @@ den med Arduino, men så skal man søge dokumentation andet steds fra.
 
 MicroPython firmware på M5StickC
 --------------------------------
-
 MicroPython er en version af Python 3 der kan køre på
 microcontrollers, som den i M5StickC. Desværre ligger MicroPython ikke
 altid på M5StickC, når man køber dem.
@@ -33,11 +32,39 @@ altid på M5StickC, når man køber dem.
 Her er en guide til at lægge nyeste version af deres
 MicroPython firmware på:
 
-1. Download M5Burner fra: https://m5stack.com/pages/download
-2. Installer M5Burner (på Mac *skal* den flyttes til Applications-folderen)
-3. Tilslut uret - og vælg den rette COM/seriel-port øverst til venstre
-4. Slet den eksisterende firmware ved at trykke på den grønne "Erase"-knap yderst til højre
-5. Tryk STICKC yderst til højre - og Download den første mulighed (UIFlow_StickC, v1.6.6)
+**Hent og installer NodeMCU-PyFlasher:**
+
+1. Download `NodeMCU-PyFlasher <https://github.com/marcelstoer/nodemcu-pyflasher/releases/tag/v4.0>`_: `Windows (64 bit) <https://github.com/marcelstoer/nodemcu-pyflasher/releases/download/v4.0/NodeMCU-PyFlasher-4.0-x64.exe>`_ - `Mac OS X <https://github.com/marcelstoer/nodemcu-pyflasher/releases/download/v4.0/NodeMCU-PyFlasher-4.0.dmg>`_
+2. Installer NodeMCU-PyFlasher
+3. Åbn NodeMCU-PyFlasher (på Mac: højreklik og Åbn)
+
+**Overfør firmware**
+
+1. Download M5Stack MicroPython firmware: :download:`uiflow1451.bin <_static/uiflow1451.bin>`
+2. Tilslut din M5StickC
+3. Vælg seriel-port øverst (på Windows fx COM2, på Mac fx /dev/cu.usbserial-B1524616B4)
+4. Tryk browse og vælg firmwaren du har downloadet
+5. Vælg "Yes, wipes all data"
+6. Tryk "Flash NodeMCU"
+7. Vent til der står *"Firmware successfully flashed. Unplug/replug or reset device
+   to switch back to normal boot mode."*
+8. Genstart din M5StickC: hold knappen på siden inde i 6 sekunder -
+   den knap tættest på USB-kablet
+
+.. figure:: illustrationer/nodemcu_pyflasher.png
+    :alt: NodeMCU PyFlasher - Firmware successfully flashed
+    :width: 500px
+
+
+..
+   1. Download M5Burner fra: https://m5stack.com/pages/download
+   2. Installer M5Burner (på Mac *skal* den flyttes til Applications-folderen)
+   3. Tilslut uret - og vælg den rette COM/seriel-port øverst til venstre
+   4. Slet den eksisterende firmware ved at trykke på den grønne "Erase"-knap yderst til højre
+   5. Tryk STICKC yderst til højre - og Download den første mulighed (UIFlow_StickC, v1.6.6)
+
+
+
 
 Installation af Mu-editoren
 ---------------------------
@@ -58,7 +85,7 @@ vil Mu ikke fungere ordentligt sammen med M5StickC.
    versionen for at kunne arbejde med M5StickC.
 
    .. figure:: illustrationer/mubilleder/downloadMU.jpg
-      :alt: MU download skærm
+      :alt: Mu download skærm
       :width: 500px
 
 
@@ -71,7 +98,7 @@ arbejde med M5StickC. Du kan altid vælge en anden *mode* ved at klikke
 
 
 .. figure:: illustrationer/mubilleder/Mustart.png
-   :alt: MU opstart
+   :alt: Mu opstart
    :width: 500px
 
 Har du problemer med at åbne Mu på Mac? Læs :ref:`fejlsøgningsguiden i
@@ -188,7 +215,7 @@ M5StickC bliver ikke opdaget af Mu (Mac)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           
 Hvis du har dette symbol nederst i højre hjørne |NOTCONNECTED| er din
-M5StickC ikke tilsluttet. Prøv at genstarte MU. Hvis det ikke virker,
+M5StickC ikke tilsluttet. Prøv at genstarte Mu. Hvis det ikke virker,
 så prøv at genstarte hele computeren. Stadig problemer? Prøv at
 tilslutte M5Stick til en anden USB port og genstart. Hvis du arbejder
 på Macbook, og ingen af dine USB porte ser ud til at virke, kan du

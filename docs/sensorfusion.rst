@@ -58,7 +58,7 @@ relativt præcist bud på vinklerne.
 
   Rå accelerometer data --.
                            \
-                            --- sensor fusion  ---> attitude
+                            ---> sensor fusion  ---> attitude
                            / 
   Rå gyroskop data -------.
 
