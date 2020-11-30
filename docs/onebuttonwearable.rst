@@ -93,7 +93,7 @@ Når vi vil skrive en linje tekst i slutningen af en fil i Python, kan
 det gøres med følgende linjer::
 
     timestring = "15:32:59"          # det vi gerne vil skrive
-    file = open("timelog.csv", "a")  # åbn filen
+    file = open("data.csv", "a")  # åbn filen
     file.write(timestring + "\n")    # skriv teksten + et linjeskift
     file.close()                     # luk filen
     
@@ -107,9 +107,15 @@ det til filen, skal vores ``timestring`` sættes til::
 
 Overføre filen til computeren
 -----------------------------
-- Animation om overførsel i Mu
 
-- Screenshot fra filen åben i .csv
+Filen skrives til M5StickC's interne filsystem. For at få den over på
+din computer, kan man klikke på 'Files' i Mu-editoren (luk REPL og
+Plotter først). Derefter kan filen overføres via drag-and-drop:
+
+.. image:: illustrationer/movefile.gif
+
+Filen ligger nu i samme mappe som den Python-fil du har åben i Mu. Den
+kan nu åbnes som regneark og analyseres i fx Excel.
 
 Afprøvning
 ----------
@@ -127,12 +133,13 @@ tidspunkterne. Hvornår på dagen laver du flest overspringshandlinger?
 Videre
 ------
 
- - Lær om hvordan man bruger skærmen via ... Gør fx så hver gang man
-   trykker på knappen, så bliver der vist en grøn prik, eller andet
-   som indikation af at knaptrykket blev registreret korrekt.
+ - Lær om hvordan man bruger skærmen på siden :doc:`tegne` Gør fx så
+   hver gang man trykker på knappen, så bliver der vist en grøn prik,
+   eller anden figur som indikation af at knaptrykket blev registreret
+   korrekt.
 
  - Lær om hvordan man kobler M5StickC på et WiFi-netværk og logger
-   data til Airtable.com via guiden TODO. Log hvert knaptryk til en
+   data til Airtable.com på siden :doc:`wifi`. Log hvert knaptryk til en
    Airtable database. Bemærk: WiFi bruger meget strøm, så dit ur vil
    meget hurtigt løbe tør for strøm, hvis det er på batteri.
 
@@ -149,12 +156,12 @@ Hele koden til projektet
   # du finder tidspunktet via internettet
   rtc.setTime(2020, 10, 23, 15, 48, 52)
 
-  filename = "timelog.csv"
+  filename = "data.csv"
 
   # Opret filen, hvis den ikke findes
   if filename not in os.listdir():
       print("File {} doesn't exist, creating.".format(filename))
-      file = open("timelog.csv", "w")
+      file = open("data.csv", "w")
       file.write("date;time\n")
       file.close()
 
@@ -167,7 +174,7 @@ Hele koden til projektet
     print(timestring)
 
     # Skriv tidspunktet til .csv filen
-    file = open("timelog.csv", "a")
+    file = open("data.csv", "a")
     file.write(timestring + "\n")
     file.close()
 
