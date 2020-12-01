@@ -49,7 +49,7 @@ MicroPython firmware på:
 
 **Overfør firmware**
 
-1. Download M5Stack MicroPython firmware: :download:`uiflow1451.bin <_static/uiflow1451.bin>`
+1. Download M5Stack MicroPython firmware: :download:`micropython_w_m5stackaddons.bin <_static/micropython_w_m5stackaddons.bin>`
 2. Tilslut din M5StickC
 3. Vælg seriel-port øverst (på Windows fx COM2, på Mac fx /dev/cu.usbserial-B1524616B4)
 4. Tryk browse og vælg firmwaren du har downloadet
