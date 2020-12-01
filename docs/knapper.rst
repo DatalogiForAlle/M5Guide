@@ -11,56 +11,16 @@ slukke.
 
 .. todo:: illustration med angivelse af knapper og LED
 
-.. _knaptryk:
-
-Registrere knaptryk
--------------------
-For at registrere knaptryk på knap A, skal vi bruge følgende
-kode. Prøv at tast det ind::
-
-  from m5stack import btnA
-
-  def knapAPressed():
-    print("Hello")
-
-  btnA.wasPressed(knapAPressed)
-
-Den første linje importerer ``btnA``. De næste linjer definerer en
-funktion hvor vi fortæller hvad der skal ske, når man klikker på
-knappen. Den sidste linje angiver at funktionen ``buttonA_onPress``
-skal kaldes når man klikker på knappen.
-
-Prøv at køre programmet og tryk på knappen.
-
-I stedet for bare at skrive ``Hello`` på skærmen, kan vi prøve at ændre
-en variabel og tælle hvor mange gange der er trykket på knappen.
-
-Prøv at erstat ``def knapAPressed():`` med følgende kode::
-
-  count = 0
-
-  def knapAPressed():
-    global count
-    count = count + 1
-    print(count)
-
-Her opretter vi først en tællervariabel ``count``, som starter
-ved 0. Derefter gør vi så hver gang man trykker på knap A, lægges
-der én til den variabel og værdien vises med ``print(count)``.
-
-Linjen ``global count`` giver skriverettigheder til variablen ``count``,
-ellers ville vi kun kunne læse værdien ``count`` inde i funktionen, men
-ikke ændre den.
 
 .. _indbygget_led:
 
 Tænd/sluk indbygget LED
 -----------------------
 I det ene hjørne har din M5StickC en indbygget LED-lampe man kan tænde
-og slukke. For at tænde den kan du skrive følgende:
+og slukke. For at tænde den kan du skrive følgende::
 
-   from m5stack import M5Led
-   M5Led.on()
+  from m5stack import M5Led
+  M5Led.on()
 
 .. figure:: illustrationer/led.svg
    :alt: LED tændt
@@ -70,18 +30,68 @@ Sluk for LED'en ved at ændre i koden så der står::
 
    M5Led.off()
 
-Et simpelt program der blinker to gange med LED'en kan skrives sådan
-her::
+Her er et simpelt program der igen og igen blinker med LED'en::
 
   from m5stack import M5Led
   import time
 
-  M5Led.on()
-  time.sleep_ms(500)
-  M5Led.off()
-  time.sleep_ms(500)
-  M5Led.on()
-  time.sleep_ms(500)
-  M5Led.off()
-  time.sleep_ms(500)
+  while True:
+    M5Led.on()
+    time.sleep_ms(500)
+    M5Led.off()
+    time.sleep_ms(500)
 
+Linjen ``while True:`` gentager de efterfølgende linjer igen og igen,
+uendeligt.
+
+Kommandoen ``time.sleep_ms(500)`` fra modulet ``time``, pauser
+programmet i et antal millisekunder, i dette tilfælde et halvt sekund,
+500 millisekunder.
+    
+.. _knaptryk:
+
+Registrere knaptryk
+-------------------
+For at registrere knaptryk på knap A, skal vi bruge følgende
+kode. Prøv at tast det ind::
+
+  from m5stack import btnA
+
+  while True:
+    if btnA.wasPressed():
+      print("Hello")
+
+Prøv at køre programmet og tryk på knappen.
+
+Linjerne kan forstås sådan her:
+
+* Den første linje importerer ``btnA``.
+  
+* Linjen ``while True:`` fortæller at de næste linjer skal gentages
+  igen og igen uendeligt - vi vil blive ved med at holde øje med
+  knaptryk.
+
+* Linjen ``if btnA.wasPressed():`` tjekker om der er blevet trykket på knap A.
+
+* Linjen ``print("Hello")`` viser teksten "Hello" (ikke på M5StickC's
+  skærm, men i Mu-editoren)
+
+I stedet for bare at skrive ``Hello`` på skærmen, kan vi prøve at ændre
+en variabel og tælle hvor mange gange der er trykket på knappen.
+
+Tælle knaptryk
+--------------
+Prøv at ændre i programmet, så det kommer til at se sådan her ud::
+
+  from m5stack import btnA
+  
+  count = 0
+
+  while True:
+    if btnA.wasPressed():
+      count = count + 1
+      print(count)
+
+Her opretter vi først en tællervariabel ``count``, som starter
+ved 0. Derefter gør vi så hver gang man trykker på knap A, lægges
+der én til den variabel og værdien vises med ``print(count)``.
