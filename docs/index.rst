@@ -34,6 +34,7 @@ Brugerguide
 
    tegne
    knapper
+   ledstrip
    accelerometer_gyro
    wifi
    tid
