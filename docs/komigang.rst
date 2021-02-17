@@ -49,7 +49,7 @@ MicroPython firmware på:
 
 **Overfør firmware**
 
-1. Download M5Stack MicroPython firmware: :download:`micropython_w_m5stackaddons.bin <_static/micropython_w_m5stackaddons.bin>`
+1. Download M5Stack MicroPython firmware: :download:`micropython1.11_2021-02-17.bin <_static/micropython1.11_2021-02-17.bin>`
 2. Tilslut din M5StickC
 3. Vælg seriel-port øverst (på Windows fx COM2, på Mac fx /dev/cu.usbserial-B1524616B4)
 4. Tryk browse og vælg firmwaren du har downloadet
@@ -154,9 +154,10 @@ hvor der står ``# Write your code here :-)`` og skriver følgende::
 Hvis du starter en linje med ``#`` bliver det forstået som en
 kommentar til koden, og får ikke betydning for dit program. Det kan
 være smart at skrive kommentarer undervejs, så man altid senere kan
-huske hvorfor man skrev som man gjorde. Når du har skrevet ovenstående
-i Mu så klik på Run |RUN| og du skulle nu kunne se noget skrift på
-M5StickCs lcd skærm.
+huske hvorfor man skrev som man gjorde.
+
+Når du har skrevet ovenstående i Mu så klik på Run |RUN| og du skulle
+nu kunne se noget skrift på M5StickCs lcd skærm.
 
    .. figure:: illustrationer/texthelloworld.svg
       :alt: tekst "Hello!"
