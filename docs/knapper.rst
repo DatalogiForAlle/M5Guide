@@ -5,12 +5,12 @@ knap A, og den på højre side kaldes knap B. Den sidste knap på venstre
 side bruges til at tænde og slukke M5StickC (sluk ved at holde nede i
 6 sekunder).
 
+.. figure:: illustrationer/knapperillu.svg
+   :alt: LED tændt
+   :width: 500px
+
 I det ene hjørne, inde bag plastikken, sidder en LED man kan tænde og
 slukke.
-
-
-.. todo:: illustration med angivelse af knapper og LED
-
 
 .. _indbygget_led:
 
