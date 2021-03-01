@@ -40,6 +40,7 @@ Brugerguide
    tid
    stroem
    sensorfusion
+   loggdata	
 
 
 Videre med M5StickC og Python

@@ -17,11 +17,11 @@ For at komme i gang, har du brug for at få adgang til skærmen via
 Når det er gjort, er du klar til at tegne. For eksempel kan du tegne
 en firkant ved at kalde funktionen :func:`lcd.rect`::
 
-  lcd.rect(10, 20, 30, 50)
+  lcd.rect(10, 10, 30, 40)
 
-De første to værdier, 10 og 20, angiver hvor rektanglet skal tegnes
-som et `x`,`y`-koordinat. De næste to tal, 30 og 50, angiver hvor bred
-og hvor høj firkanten skal være.
+De første to værdier, 10 og 10, angiver hvor rektanglet skal tegnes
+som et `x`,`y`-koordinat. De næste to tal, 30 og 40, angiver hvor høj
+og hvor bred firkanten skal være.
 
 Koordinatsystemet
 -----------------
@@ -40,21 +40,41 @@ Her har vi prøvet at tegne koordinatsystemet ind ovenpå M5StickC:
    :alt: M5StickC med koordinatsystem
    :width: 500px
 
-Når du kører ``lcd.rect(10, 20, 30, 50)``, som beskrevet ovenfor, så
+Når du kører ``lcd.rect(10, 10, 30, 40)``, som beskrevet ovenfor, så
 kommer det altså til at se sådan her ud:
 
-.. todo:: illustration
+.. figure:: illustrationer/koordinatsystemmedrect.svg
+   :alt: M5StickC med koordinatsystem
+   :width: 500px
 
 De andre tegnefunktioner fungerer nogenlunde på samme vis, og nedenfor
 kan du læse en beskrivelse for hver af dem om hvordan de virker. Fx er
 der :func:`lcd.ellipse`, til at tegne ellipser og cirkler, eller
 :func:`lcd.line` til at tegne linjer, eller :func:`lcd.triangle` til
-at tegne trekanter.
+at tegne trekanter. Du kan også tegne tekst på skærmen med :func:`lcd.text`.
 
-Du kan også tegne tekst på skærmen med :func:`lcd.text`.
+Når du tegner, tegnes lagene i den rækkefølge de står i koden, illustrationen viser forskellen på at bytte om på linje 4 og 6 i kodeeksemplet::
 
-.. todo:: eventuelt eksempel hvor vi bruger en masse tegne funktioner, bare
-for at illustrere mulighederne?
+	from m5stack import lcd
+	lcd.clear(000000)
+
+	lcd.arc(40, 75, 12, 2, 180, 360, color=0xa80000)
+	lcd.circle(40, 50, 30, color=0xffcf00, fillcolor=0xffcf00)
+	lcd.arc(40, 60, 13, 2, 0, 180, color=0xa80000)
+
+	lcd.circle(30, 40, 10, color=0xFFFFFF, fillcolor=0xFFFFFF)
+	lcd.circle(50, 40, 10, color=0xFFFFFF, fillcolor=0xFFFFFF)
+	lcd.circle(30, 43, 4, color=0x000000, fillcolor=0x000000)
+	lcd.circle(50, 43, 4, color=0x000000, fillcolor=0x000000)
+
+	lcd.triangle(40, 0, 20, 27, 60, 27, color=0xf5e9b5, fillcolor=0xf3e9bd) 
+
+	lcd.text(30, 10, "M5", color=0xff9b00)
+
+.. figure:: illustrationer/megettegning.svg
+   :alt: meget tegning
+   :width: 500px
+
 
 Farveangivelser
 ---------------
