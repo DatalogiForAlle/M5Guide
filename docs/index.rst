@@ -40,7 +40,8 @@ Brugerguide
    tid
    stroem
    sensorfusion
-   loggedata	
+   loggedata
+   hat		
 
 
 Videre med M5StickC og Python
