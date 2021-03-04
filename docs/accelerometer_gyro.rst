@@ -10,7 +10,8 @@ Accelerometer & Gyroskop
 ========================
 
 Grundlæggende
--------------
+^^^^^^^^^^^^^
+
 M5StickC indeholder en bevægelsessensor, (SH200Q/MPU6886), der består
 af et accelerometer og et gyroskop. Bevægelsessensoren kan fx bruges
 til at måle:
@@ -105,6 +106,7 @@ Når man holder M5StickC stille med skærmen opad, så vil man kunne måle cirka
 
 Gyroskop
 ^^^^^^^^
+
 Gyroskopet registrerer rotationshastighed omkring en
 akse. Rotationshastigheden måles i antal grader per sekund.
 
@@ -136,7 +138,7 @@ Gyroskop-aflæsningen give ``(30, 0, 0)``.
 
 
 EKSEMPEL: Registrer bevægelse
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Som illustration på hvordan accelerometeret kan bruges er her eksemplekode:: 
 
@@ -166,7 +168,43 @@ Som illustration på hvordan accelerometeret kan bruges er her eksemplekode::
         	else: lcd.clear(0x000000)
 
 
+EKSEMPEL: Registrer bevægelse 2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+For at illustrere forskellen på :func:`print()` og :func:`lcd.text()` kig på følgende kode::
+
+	#bibliotek til at bruge accelerometer/gyroskop
+	from lib import imu 
+	#bibliotek til at bruge skærmen på M5stickC 
+	from m5stack import lcd 
+	#bibliotek til at bruge tidsenheder
+	import time 
+
+	myIMU = imu.IMU() 
+
+	ax, ay, az = myIMU.acceleration 
+	ay_sidst = ay 
+	hastighed = 0.025 
+
+	while True: 
+		ax, ay, az = myIMU.acceleration 
+		if ay > ay_sidst: 
+			#denne linje skriver til MU-editoren
+			print('godt!') 
+			#denne linje sætter en baggrundsfarve på M5StickC
+			lcd.clear(0x75ad0a)
+			#denne linje skriver text til M5StickC
+			lcd.text(5,5,"godt!")
+		else: 
+			#denne linje skriver til MU-editoren
+			print('lidt hurtigere..') 
+			#denne linje sætter en baggrundsfarve på M5StickC
+			lcd.clear(0xffff99)
+			#denne linje skriver text til M5StickC
+			lcd.text(5,5,"lidt hurtigere..")
+
+		ay_sidst = ay+hastighed 
+		time.sleep_ms(300)
 
 
 

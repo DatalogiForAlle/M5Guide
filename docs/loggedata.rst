@@ -10,7 +10,7 @@
    :height: 20
    :width: 20
 
-Logning af data
+Gem/hent/overfør data
 ========================
 
 Gemme data
@@ -59,11 +59,18 @@ Hvis man vil se indholdet af en fil klan det gøres ved at åbne den i læsetils
 	fil.close()
 
 
+
+
 Fra M5stickC til computer
 -------------------------
 Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'en. For at få den over på computeren, kan man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over til \"Files on your computer\". Filen ligger nu samme sted som den mu-fil du arbejder i er gemt.  
 
 .. image:: illustrationer/movefile.gif
+
+
+Fra computer til M5stickC
+-------------------------
+.. todo:: skriv afsnit om overførsel af filer fra computer - find på et eksempel på brug/relevans
 
 
 EKSEMPEL: Gemme IMU data i .csv format
