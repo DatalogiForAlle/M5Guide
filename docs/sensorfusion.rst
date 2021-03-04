@@ -67,8 +67,11 @@ forskellige algoritmer, og vi kommer til at bruge en der kaldes et
 *Mahony filter*. For at det virker, skal algoritmen hele tiden
 opdateres med de nyeste værdier fra accelerometeret og gyroskopet.
 
-Først overføres filen ``fusion.py`` fra din computer til M5StickC:
+Først overføres filen ``fusion.py`` fra internettet til din computer:
 https://raw.githubusercontent.com/DatalogiForAlle/M5Guide/master/lib/fusion.py
+
+Dette kan gøres ved at klikke på linket og derefter trykke **ctrl** + **s** / **command** + **s** og så gemme fusion.py samme sted som du gemmer den kode du arbejder med. 
+For at overføre fra computer til M5StickC se :doc:`loggedata`
 
 .. todo:: beskriv/vis med video hvordan man overfører filen.
 

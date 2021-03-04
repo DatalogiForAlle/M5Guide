@@ -63,14 +63,19 @@ Hvis man vil se indholdet af en fil klan det gøres ved at åbne den i læsetils
 
 Fra M5stickC til computer
 -------------------------
-Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'en. For at få den over på computeren, kan man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over til \"Files on your computer\". Filen ligger nu samme sted som den mu-fil du arbejder i er gemt.  
+Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'en. For at få den over på computeren, kan man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over til \"Files on your computer:\". Filen ligger nu samme sted som den mu-fil du arbejder i er gemt.  
 
 .. image:: illustrationer/movefile.gif
 
 
 Fra computer til M5stickC
 -------------------------
-.. todo:: skriv afsnit om overførsel af filer fra computer - find på et eksempel på brug/relevans
+
+For at overføre filer fra computeren til M5Stick, skal man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over fra \"Files on your computer:\" over til \"Files on your devise:\". 
+Det der plejer at drille her, er at den fil du gerne vil have over på M5StickC ikke ligger i listen med \"Files on your computer:\". 
+MU åbner kun den mappe som det kode du er ved at skrive ligger gemt i - så du skal altså sikre dig at din kode og den fil du gerne vil overføre ligger gemt samme sted på computeren. 
+
+.. todo:: lav en illustration
 
 
 EKSEMPEL: Gemme IMU data i .csv format
