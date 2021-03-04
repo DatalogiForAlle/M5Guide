@@ -15,7 +15,7 @@ Afspilning af tone når armen løftes korrekt::
 	from lib import imu 
 	from m5stack import lcd 
 	# Importer bibliotek til at arbejde med højttaler
-	from flow lib import hat
+	from flowlib import hat
 	import time 
 
 	myIMU = imu.IMU() 
