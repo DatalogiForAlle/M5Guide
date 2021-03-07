@@ -50,8 +50,16 @@ M5StickC forbindes til computeren via det medfølgende USB-C kabel.
 Hvad kan hvis man tilslutter eksternt udstyr?
 ---------------------------------------------
 
-.. todo:: Eksempler på hvad man kan, hvis man tilslutter ekstra
-    sensorer eller aktuatorer
+Der kan tilsluttes forskelligt ekstraudstyr til M5StickC. Temperaturmåler, motor, joystick, højtaler, muskelsensor, LED og meget, meget mere. 
+
+Noget af det enkleste er at tilslutte de HAT-moduler der er specialdesignet til M5StickC.
+
+   * se hvordan højtaleren SPK_HAT tilsluttes og bruges her: :doc:`hat`
+   * se hvordan miljøstationen ENV_HAT tilsluttes og bruges her: :doc:`envhat`	
+
+..
+	.. todo:: Eksempler på hvad man kan, hvis man tilslutter ekstra
+	    sensorer eller aktuatorer
 
 ..
    Eksempler på hvad man kan, hvis man tilslutter højtaler,

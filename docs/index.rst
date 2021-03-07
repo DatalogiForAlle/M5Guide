@@ -41,7 +41,8 @@ Brugerguide
    stroem
    sensorfusion
    loggedata
-   hat		
+   hat
+   envhat			
 
 
 Videre med M5StickC og Python
