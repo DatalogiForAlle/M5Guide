@@ -6,8 +6,8 @@ Tilslut modul
 
 Det findes nogle faste moduler der kan tilsluttes M5StickC. En af dem er SPK_HAT 
 
-.. figure:: illustrationer/spkhat2.jpg
-    :alt: speaker modul
+.. figure:: illustrationer/spkhat.jpg
+    :alt: speaker module
     :width: 500px
 
 En lille speaker, der, ligesom de andre HAT-moduler, tilsluttes let ved at sætte den 8 pins ind i de 8 huller i toppen af M5StickC.

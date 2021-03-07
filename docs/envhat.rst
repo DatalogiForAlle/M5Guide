@@ -6,8 +6,8 @@ Tilslut modul
 
 Det findes nogle faste moduler der kan tilsluttes M5StickC. En af dem er ENV_HAT 
 
-.. figure:: illustrationer/spkhat2.jpg
-    :alt: speaker modul
+.. figure:: illustrationer/envhat.jpg
+    :alt: environment module
     :width: 500px
 
 Et lille modul, der, ligesom de andre HAT-moduler, tilsluttes let ved at sætte den 8 pins ind i de 8 huller i toppen af M5StickC.
