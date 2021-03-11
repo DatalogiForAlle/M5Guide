@@ -171,7 +171,7 @@ Som illustration på hvordan accelerometeret kan bruges er her eksemplekode::
 EKSEMPEL: Registrer bevægelse 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For at illustrere forskellen på :func:`print()` og :func:`lcd.text()` kig på følgende kode::
+Bevægelse langs y-aksen kan aflæses på M5StcikC og i REPL::
 
 	#bibliotek til at bruge accelerometer/gyroskop
 	from lib import imu 

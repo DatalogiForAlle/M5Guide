@@ -12,14 +12,18 @@ længere, kan man:
 
 Tips til at spare strøm
 -----------------------
-.. todo:: skriv sektion
 
+Alt hvad du tilslutter til M5stickC tager strøm når det kører. Motorer, LED'er højtalerne og temperatursensor. Derfor er det en god ide at overveje nøje hvordan man skrive koden, så man f.eks kun aflæser en sensor når det er nødvendigt, og ikke har tænde LED hele tiden. 
+
+Tilslutning til wifi sluger også strøm, så det er en god ide at logge på wifi, hente det data fra nettet man skal bruge go så logen af igen. 
+
+Brug af skærmen er en anden stor strømsluger. Man kan skrue ned for skærmens lysniveau ``axp.setLcdBrightness(50)`` og generelt tænke i at bruge mørke farver på skærmen, hvis man gerne vil spare strøm. 
 
 * Begræns brug af WiFi
 * Skru ned for skærmens lysniveau ``axp.setLcdBrightness(50)``
 * Brug mørke farver på skærmen
           
-.. todo:: lav målinger af batteri-levetid: med skærmen slukket, med
+..	.. todo:: lav målinger af batteri-levetid: med skærmen slukket, med
           skærmen tændt med hvid i alle pixels, med skærmen slukket og
           WiFi tændt (hent noget data hvert 30. sekund)
 
@@ -38,8 +42,7 @@ en anden strømkilde, kan I bruge funktionen ``axp.getChargeState()``
 
    :rtype: boolean
 
-   Returnerer ``True`` hvis enheden er sluttet til strøm og oplader,
-   ellers returneres ``False``.
+Returnerer ``True`` hvis enheden er sluttet til strøm og oplader, ellers returneres ``False``.
 
 
 Sluk M5StickC fra dit program

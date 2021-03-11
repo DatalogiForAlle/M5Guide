@@ -18,13 +18,15 @@ En lille speaker, der, ligesom de andre HAT-moduler, tilsluttes let ved at sætt
 
 Afspil toner
 ------------
-For at lave et musikstykke, har vi brug for at kende frekvensen/*tonens høje* samt nodeværdien/*tonens varighed*, for de toner vi skal bruge,. Frekvensen kan beregnes - eller du kan finde en liste i bunden af denne side.
+For at lave et musikstykke, har vi brug for at kende frekvensen/*tonens høje* samt nodeværdien/*tonens varighed*, for de toner vi skal bruge,. Frekvensen kan beregnes - eller du kan finde en liste i bunden af denne side :ref:`frek`. Kammertonen **A** har frekvens 440. 
 
-M5StickC spk-modul er begrænset til at spille 1 tone af gangen, hvilket selvfølgelig lægger lidt en dæmper på de musikalske udfoldelser. 
 
 .. figure:: illustrationer/nodes.svg
     :alt: oversigt over kommertonen
     :width: 500px
+
+
+SPK-modulet er begrænset til at spille 1 tone af gangen, hvilket selvfølgelig lægger lidt en dæmper på de musikalske udfoldelser. 
 
 M5StickC har to funktioner i biblioteket til at lave lyde; :func:`sing` og :func:`tone`. 
 
@@ -37,6 +39,39 @@ M5StickC har to funktioner i biblioteket til at lave lyde; :func:`sing` og :func
 :func:`tone` skal bruges ved at give frekvensen og derefter en varighed i millisekunder. 
 ::
 	spk.tone(440, 1500)
+
+EKSEMPEL: De første toner
+------------------------------------
+::
+
+	from m5stack import lcd
+	import time
+	from flowlib import hat
+
+	spk = hat.get(hat.SPEAKER)
+	
+	# Giv frekvensen navn efter tonerne
+	C7 = 2093
+	G6 = 1568
+	E6 = 1319
+	A6 = 1760
+	AS6 = 1865
+	B6 = 1976
+	
+	spk.tone(C7,500)
+	time.sleep_ms(200)
+	spk.tone(G6,500)
+	time.sleep_ms(200)
+	spk.tone(E6,500)
+	time.sleep_ms(200)
+	spk.tone(A6,500)
+	time.sleep_ms(100)
+	spk.tone(B6,250)
+	time.sleep_ms(50)
+	spk.tone(AS6,250)
+	time.sleep_ms(100)
+	spk.tone(A6,500)
+
 
 
 EKSEMPEL: Spil Megalovania
@@ -148,7 +183,7 @@ EKSEMPEL: Spil Megalovania
 EKSEMPEL: Registrer bevægelse med lyd
 -------------------------------------
 
-Afspilning af tone når armen løftes korrekt::
+Afspilning af tone når armen løftes::
 
 	from lib import imu 
 	from m5stack import lcd 
@@ -185,11 +220,10 @@ Afspilning af tone når armen løftes korrekt::
 		time.sleep_ms(300)
 
 
+.. _frek:
 
-.. todo:: kan den ikke afspille mp3?!?
-
-Frekvenser
-^^^^^^^^^^
+Oversigt over Frekvenser
+^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
 	N_B0  = 31

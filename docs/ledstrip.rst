@@ -4,7 +4,7 @@ LEDStrip/NeoPixel
 Tilslut jeres LED-strip som vist på billedet. Brug et mellemled (3 x
 jumper kabel):
 
-.. figure:: illustrationer/ledstrip_connection.png
+.. figure:: illustrationer/ledstripConnect.jpg
    :alt: LEDStrip forbindelser
    :width: 500px
 

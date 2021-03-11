@@ -10,8 +10,8 @@
    :height: 20
    :width: 20
 
-Gem/hent/overfør data
-========================
+Overfør, gem og hent data
+=========================
 
 Gemme data
 ----------
@@ -60,6 +60,19 @@ Hvis man vil se indholdet af en fil klan det gøres ved at åbne den i læsetils
 
 
 
+.. _comtilM5:
+
+Fra computer til M5stickC
+-------------------------
+
+For at overføre filer fra computeren til M5Stick, skal man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over fra \"Files on your computer:\" over til \"Files on your devise:\". 
+
+Det der plejer at drille her, er at den fil du gerne vil have over på M5StickC ikke ligger i listen med \"Files on your computer:\". 
+
+MU åbner kun den mappe som det kode du er ved at skrive ligger gemt i - så du skal altså sikre dig at din kode og den fil du gerne vil overføre ligger gemt samme sted på computeren. 
+
+.. image:: illustrationer/comtilm5.gif
+
 
 Fra M5stickC til computer
 -------------------------
@@ -67,15 +80,6 @@ Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'
 
 .. image:: illustrationer/movefile.gif
 
-
-Fra computer til M5stickC
--------------------------
-
-For at overføre filer fra computeren til M5Stick, skal man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over fra \"Files on your computer:\" over til \"Files on your devise:\". 
-Det der plejer at drille her, er at den fil du gerne vil have over på M5StickC ikke ligger i listen med \"Files on your computer:\". 
-MU åbner kun den mappe som det kode du er ved at skrive ligger gemt i - så du skal altså sikre dig at din kode og den fil du gerne vil overføre ligger gemt samme sted på computeren. 
-
-.. todo:: lav en illustration
 
 
 EKSEMPEL: Gemme IMU data i .csv format

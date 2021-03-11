@@ -53,7 +53,7 @@ der :func:`lcd.ellipse`, til at tegne ellipser og cirkler, eller
 :func:`lcd.line` til at tegne linjer, eller :func:`lcd.triangle` til
 at tegne trekanter. Du kan også tegne tekst på skærmen med :func:`lcd.text`.
 
-Når du tegner, tegnes lagene i den rækkefølge de står i koden, illustrationen viser forskellen på at bytte om på linje 4 og 6 i kodeeksemplet::
+Når du tegner, tegnes lagene i den rækkefølge de står i koden::
 
 	from m5stack import lcd
 	# skærmretningen
@@ -81,7 +81,7 @@ Når du tegner, tegnes lagene i den rækkefølge de står i koden, illustratione
 
 .. figure:: illustrationer/megettegning.svg
    :alt: meget tegning
-   :width: 500px
+   :width: 100px
 
 
 Farveangivelser

@@ -3,6 +3,7 @@ Knaptryk og indbygget LED
 M5StickC har to knapper vi kan programmere. Den under skærmen kaldes
 knap A, og den på højre side kaldes knap B. Den sidste knap på venstre
 side bruges til at tænde og slukke M5StickC
+
 .. figure:: illustrationer/knapperillu.svg
    :alt: alle knapperne
    :width: 500px
@@ -10,7 +11,7 @@ side bruges til at tænde og slukke M5StickC
 
 Tænd/sluk knap
 --------------
-For at tænde trykkes en enkelt gang på knappen. 
+For at tænde trykkes en enkelt gang på knappen. For at resette trykkes en enkelt gang. For at slukke helt holdes knappen inde i 5 sekunder (indtil den slukker).
 
 
 .. _indbygget_led:
