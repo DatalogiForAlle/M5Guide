@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 787 535.1" style="enable-background:new 0 0 787 535.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st2{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st3{fill:none;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:12px;}
+</style>
+<g id="Layer_1">
+	<g id="insideM5.psd_1_">
+		<defs>
+			<rect id="SVGID_1_" x="13.6" y="0" width="713.3" height="535.1"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_2_);">
+			
+				<image style="overflow:visible;" width="1417" height="1063" id="Layer_3_1_" xlink:href="21C3161011BA730D.png"  transform="matrix(0.5034 0 0 0.5034 13.553 0)">
+			</image>
+		</g>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="13.6" y="0" width="713.3" height="535.1">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="13.6" y="0" width="713.3" height="535.1" id="Layer_2_2_">
+			<g id="Layer_2Opacity_Mask_1_" class="st0">
+				<g style="clip-path:url(#SVGID_2_);">
+					
+						<image style="overflow:visible;" width="1417" height="1063" id="Layer_2Opacity_Mask_4_" xlink:href="21C3161011BA7313.jpg"  transform="matrix(0.5034 0 0 0.5034 13.553 0)">
+					</image>
+				</g>
+			</g>
+		</mask>
+		<g style="clip-path:url(#SVGID_2_);mask:url(#Layer_2_2_);">
+			
+				<image style="overflow:visible;" width="1417" height="1063" id="Layer_2_1_" xlink:href="21C3161011BA7315.png"  transform="matrix(0.5034 0 0 0.5034 13.553 0)">
+			</image>
+		</g>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="13.6" y="0" width="713.3" height="535.1">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="13.6" y="0" width="713.3" height="535.1" id="Layer_1_1_">
+			<g id="Layer_1Opacity_Mask_1_" class="st1">
+				<g style="clip-path:url(#SVGID_2_);">
+					
+						<image style="overflow:visible;" width="1417" height="1063" id="Layer_1Opacity_Mask_4_" xlink:href="21C3161011BA7317.jpg"  transform="matrix(0.5034 0 0 0.5034 13.553 0)">
+					</image>
+				</g>
+			</g>
+		</mask>
+		<g style="clip-path:url(#SVGID_2_);mask:url(#Layer_1_1_);">
+			
+				<image style="overflow:visible;" width="1417" height="1063" id="Layer_1_2_" xlink:href="21C3161011BA7314.png"  transform="matrix(0.5034 0 0 0.5034 13.553 0)">
+			</image>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<line class="st2" x1="238.9" y1="90.1" x2="75.6" y2="90.1"/>
+	<polyline class="st2" points="126,273.3 126,242 75.6,242 	"/>
+	<line class="st2" x1="307.6" y1="217.6" x2="378.6" y2="90.1"/>
+	<line class="st2" x1="314.5" y1="224.4" x2="378.6" y2="109.2"/>
+	<line class="st2" x1="274.8" y1="273.3" x2="274.8" y2="430.5"/>
+	<line class="st2" x1="616" y1="109.2" x2="690.8" y2="109.2"/>
+	<line class="st2" x1="506.9" y1="273.3" x2="690.8" y2="273.3"/>
+	<line class="st2" x1="520.6" y1="335.1" x2="520.6" y2="445.8"/>
+</g>
+<g id="Layer_3">
+	<rect x="496.9" y="450.4" class="st3" width="138.9" height="34.4"/>
+	<text transform="matrix(1 0 0 1 496.9468 458.9738)"><tspan x="0" y="0" class="st4 st5">AXP192 - power system </tspan><tspan x="0" y="14.4" class="st4 st5">management</tspan></text>
+	<rect x="696.8" y="263.3" class="st3" width="69.5" height="34.4"/>
+	<text transform="matrix(1 0 0 1 696.7842 271.8675)"><tspan x="0" y="0" class="st4 st5">ESP32 </tspan><tspan x="0" y="14.4" class="st4 st5">processon</tspan></text>
+	<rect x="694.7" y="98.5" class="st3" width="92.4" height="55"/>
+	<text transform="matrix(1 0 0 1 694.6568 107.0651)" class="st4 st5">Batteri</text>
+	<rect x="380.5" y="76.3" class="st3" width="122.9" height="22.1"/>
+	<text transform="matrix(1 0 0 1 380.5346 84.9275)" class="st4 st5">Rød LED</text>
+	<rect x="386.3" y="101.5" class="st3" width="111.5" height="24.4"/>
+	<text transform="matrix(1 0 0 1 386.2594 110.1183)" class="st4 st5">Infrarød sender</text>
+	<rect x="239.7" y="430.5" class="st3" width="161.8" height="32.1"/>
+	<text transform="matrix(1 0 0 1 239.6944 439.1266)"><tspan x="0" y="0" class="st4 st5">IMU: accelrometer og </tspan><tspan x="0" y="14.4" class="st4 st5">gyroskop</tspan></text>
+	<rect y="81.7" class="st3" width="96.2" height="33.6"/>
+	<text transform="matrix(1 0 0 1 -6.714319e-05 90.271)" class="st4 st5">LCD skærm</text>
+	<rect x="22.5" y="237" class="st3" width="51.1" height="30.5"/>
+	<text transform="matrix(1 0 0 1 22.5189 245.6148)" class="st4 st5">mikrofon</text>
+</g>
+</svg>

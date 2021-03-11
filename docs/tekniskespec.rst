@@ -23,14 +23,10 @@ Overblik over M5StickC
    :alt: M5StickC med og uden plastik-case
    :width: 500px
 
-..
-   .. todo:: illustration
-    - foto af M5StickC skilt ad, så man kan se hvordan den ser ud indvendigt
+.. figure:: illustrationer/inside.svg
+   :alt: M5StickC indeni
+   :width: 500px
 
-   .. todo:: illustration
-    - foto af hele M5StickC
-
-   Begge fotos med labels og pile der angiver komponenternes placering
 
 M5stickC er baseret på en microcontroller af typen ESP32. 
 
