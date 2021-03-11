@@ -23,7 +23,7 @@ Overblik over M5StickC
    :alt: M5StickC med og uden plastik-case
    :width: 500px
 
-.. figure:: illustrationer/inside.svg
+.. figure:: illustrationer/inside.jpg
    :alt: M5StickC indeni
    :width: 500px
 
