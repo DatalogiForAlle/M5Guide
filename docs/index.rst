@@ -53,6 +53,7 @@ Videre med M5StickC og Python
 
 Avanceret
 ---------
+ * Flashe firmware (se :ref:`flash-firmware`)
  * Tilkoble kamera (M5 UnitV)
  * `boot.py`
  * ESP32 Thing og flash MicroPython firmware

@@ -56,20 +56,28 @@ at tegne trekanter. Du kan også tegne tekst på skærmen med :func:`lcd.text`.
 Når du tegner, tegnes lagene i den rækkefølge de står i koden, illustrationen viser forskellen på at bytte om på linje 4 og 6 i kodeeksemplet::
 
 	from m5stack import lcd
+	# skærmretningen
+	lcd.orient(lcd.PORTRAIT)
+
+	#farver baggrunden sort
 	lcd.clear(000000)
 
-	lcd.arc(40, 75, 12, 2, 180, 360, color=0xa80000)
+	# Det gule hoved
 	lcd.circle(40, 50, 30, color=0xffcf00, fillcolor=0xffcf00)
+	#tegner en halvcirkel mund
 	lcd.arc(40, 60, 13, 2, 0, 180, color=0xa80000)
 
+	# Øjne med pupiller
 	lcd.circle(30, 40, 10, color=0xFFFFFF, fillcolor=0xFFFFFF)
 	lcd.circle(50, 40, 10, color=0xFFFFFF, fillcolor=0xFFFFFF)
 	lcd.circle(30, 43, 4, color=0x000000, fillcolor=0x000000)
 	lcd.circle(50, 43, 4, color=0x000000, fillcolor=0x000000)
-
+	
+	# Hat
 	lcd.triangle(40, 0, 20, 27, 60, 27, color=0xf5e9b5, fillcolor=0xf3e9bd) 
-
-	lcd.text(30, 10, "M5", color=0xff9b00)
+	
+	# Tekst: M5
+	lcd.text(30, 120, "M5", color=0xff9b00)
 
 .. figure:: illustrationer/megettegning.svg
    :alt: meget tegning

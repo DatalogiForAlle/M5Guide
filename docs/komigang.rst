@@ -24,58 +24,16 @@ den med Arduino, men så skal man søge dokumentation andet steds fra.
 Videoguide
 ----------
 
-Videoen her forklarer Maja alle trinene i guiden. Har du problemer, så
+I videoen her forklarer Maja trinnene til at installere MU-editoren. Har du problemer, så
 finder du en :ref:`troubleshooting_guide` nederst på denne side.
 
 .. raw:: html
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/cD4QTLzDrwQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/cD4QTLzDrwQ?start=254" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          
 
-MicroPython firmware på M5StickC
---------------------------------
-MicroPython er en version af Python 3 der kan køre på
-microcontrollers, som den i M5StickC. Desværre ligger MicroPython ikke
-altid på M5StickC, når man køber dem.
 
-Her er en guide til at lægge nyeste version af deres
-MicroPython firmware på:
-
-**Hent og installer NodeMCU-PyFlasher:**
-
-1. Download `NodeMCU-PyFlasher <https://github.com/marcelstoer/nodemcu-pyflasher/releases/tag/v4.0>`_: `Windows (64 bit) <https://github.com/marcelstoer/nodemcu-pyflasher/releases/download/v4.0/NodeMCU-PyFlasher-4.0-x64.exe>`_ - `Mac OS X <https://github.com/marcelstoer/nodemcu-pyflasher/releases/download/v4.0/NodeMCU-PyFlasher-4.0.dmg>`_
-2. Installer NodeMCU-PyFlasher
-3. Åbn NodeMCU-PyFlasher (på Mac: højreklik og Åbn)
-
-**Overfør firmware**
-
-1. Download M5Stack MicroPython firmware: :download:`micropython1.11_2021-02-17.bin <_static/micropython1.11_2021-02-17.bin>`
-2. Tilslut din M5StickC
-3. Vælg seriel-port øverst (på Windows fx COM2, på Mac fx /dev/cu.usbserial-B1524616B4)
-4. Tryk browse og vælg firmwaren du har downloadet
-5. Vælg "Yes, wipes all data"
-6. Tryk "Flash NodeMCU"
-7. Vent til der står *"Firmware successfully flashed. Unplug/replug or reset device
-   to switch back to normal boot mode."*
-8. Genstart din M5StickC: hold knappen på siden inde i 6 sekunder -
-   den knap tættest på USB-kablet
-
-.. figure:: illustrationer/nodemcu_pyflasher.png
-    :alt: NodeMCU PyFlasher - Firmware successfully flashed
-    :width: 500px
-
-
-..
-   1. Download M5Burner fra: https://m5stack.com/pages/download
-   2. Installer M5Burner (på Mac *skal* den flyttes til Applications-folderen)
-   3. Tilslut uret - og vælg den rette COM/seriel-port øverst til venstre
-   4. Slet den eksisterende firmware ved at trykke på den grønne "Erase"-knap yderst til højre
-   5. Tryk STICKC yderst til højre - og Download den første mulighed (UIFlow_StickC, v1.6.6)
-
-
-
-
-Installation af Mu-editoren
+Installation af MU-editoren
 ---------------------------
 Hent og installér denne alpha-udgave af Mu-editoren, som understøtter M5StickC:
 
@@ -178,6 +136,53 @@ Fejlsøgningsguide
 Der er nogle gange problemer med at få Mu og M5StickC til at snakke
 sammen. Her er en oversigt over de mest almindelige problemer, og hvad
 der måske kan løse det.
+
+.. _flash-firmware:
+
+MicroPython firmware på M5StickC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MicroPython er en version af Python 3 der kan køre på
+microcontrollers, som den i M5StickC. Desværre ligger MicroPython ikke
+altid på M5StickC, når man køber dem.
+
+De første 4 minutter i videoen gennemgår trinnene til at lægge firmware ovenpå M5StickC: 
+
+.. raw:: html
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/cD4QTLzDrwQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Her er samme guide i tekstformat:     
+
+**Hent og installer NodeMCU-PyFlasher:**
+
+1. Download `NodeMCU-PyFlasher <https://github.com/marcelstoer/nodemcu-pyflasher/releases/tag/v4.0>`_: `Windows (64 bit) <https://github.com/marcelstoer/nodemcu-pyflasher/releases/download/v4.0/NodeMCU-PyFlasher-4.0-x64.exe>`_ - `Mac OS X <https://github.com/marcelstoer/nodemcu-pyflasher/releases/download/v4.0/NodeMCU-PyFlasher-4.0.dmg>`_
+2. Installer NodeMCU-PyFlasher
+3. Åbn NodeMCU-PyFlasher (på Mac: højreklik og Åbn)
+
+**Overfør firmware**
+
+1. Download M5Stack MicroPython firmware: :download:`micropython1.11_2021-02-17.bin <_static/micropython1.11_2021-02-17.bin>`
+2. Tilslut din M5StickC
+3. Vælg seriel-port øverst (på Windows fx COM2, på Mac fx /dev/cu.usbserial-B1524616B4)
+4. Tryk browse og vælg firmwaren du har downloadet
+5. Vælg "Yes, wipes all data"
+6. Tryk "Flash NodeMCU"
+7. Vent til der står *"Firmware successfully flashed. Unplug/replug or reset device
+   to switch back to normal boot mode."*
+8. Genstart din M5StickC: hold knappen på siden inde i 6 sekunder -
+   den knap tættest på USB-kablet
+
+.. figure:: illustrationer/nodemcu_pyflasher.png
+    :alt: NodeMCU PyFlasher - Firmware successfully flashed
+    :width: 500px
+
+
+..
+   1. Download M5Burner fra: https://m5stack.com/pages/download
+   2. Installer M5Burner (på Mac *skal* den flyttes til Applications-folderen)
+   3. Tilslut uret - og vælg den rette COM/seriel-port øverst til venstre
+   4. Slet den eksisterende firmware ved at trykke på den grønne "Erase"-knap yderst til højre
+   5. Tryk STICKC yderst til højre - og Download den første mulighed (UIFlow_StickC, v1.6.6)
 
 
 .. _mu-on-mac-issues:
