@@ -74,7 +74,6 @@ Dette kan gøres ved at klikke på linket og derefter trykke **ctrl** + **s** / 
 
 For at overføre fra computer til M5StickC, se :ref:`comtilM5`
 
-..	.. todo:: beskriv/vis med video hvordan man overfører filen.
 
 Tjek at det virker ved at importere biblioteket::
 

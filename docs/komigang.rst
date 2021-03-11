@@ -14,6 +14,9 @@
    :height: 20
    :width: 20
 
+.. |FILES| image:: illustrationer/mubilleder/files.jpg
+   :height: 20
+   :width: 20
 
 Kom godt igang
 ==============
@@ -121,7 +124,22 @@ nu kunne se noget skrift på M5StickCs lcd skærm.
       :alt: tekst "Hello!"
       :width: 500px
 
-Tillykke du er nu godt igang! 
+main.py
+-------
+
+Når du klikker Run |RUN| i mu editoren, kører du dit program fra MU. Det vil sige at det IKKE ligger på M5StickC. Hvis du tager USBstikket ud og genstarter, vil din kode stoppe med at køre. For at kunne køre uden tilslutning til MU, skal dit program skrives over på M5Stick'en og have navnet main.py. 
+
+M5StickC kører altid main.py efter boot.py. 
+
+I MU kan du let skrive den kode du har arbejdet på over på M5StickC, ved at åbne filer |FILES|, finde navnet på din fil du gerne vil have skal være main, højreklikke og vælge "Write to main.py on device". 
+
+Nu ligger filen på den M5Stick, og vil blive kørt hver gang du tænder den.  
+
+.. figure:: illustrationer/mainbil.jpg
+      :alt: main.py forklaring
+      :width: 500px
+
+
 
 Hvis du vil vide mere om Mu-editoren, så har holdet bag Mu-editoren
 har en række tutorials, der kan gøre dig fortrolig med hvordan Mu
@@ -136,6 +154,8 @@ Fejlsøgningsguide
 Der er nogle gange problemer med at få Mu og M5StickC til at snakke
 sammen. Her er en oversigt over de mest almindelige problemer, og hvad
 der måske kan løse det.
+
+Du er også velkommen til at gå ind på `Dataekspeditioners forum <https://www.forum.dataekspeditioner.dk/c/micropython/11>`_ og stille dit spørgsmål der.
 
 .. _flash-firmware:
 

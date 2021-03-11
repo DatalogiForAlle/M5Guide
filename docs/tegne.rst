@@ -518,12 +518,12 @@ Tegn JPG og BMP billeder på skærmen
 
    Indlæser en billedfil med navnet `filename`, som er placeret på
    M5StickC'ens filsystem. Understøtter kun ``.bmp`` og ``.jpg`` filer.
-
-   .. todo:: link til guide hvor man kan se hvordan man overfører filer
               
    :param x: Talværdi: x-koordinat hvor billedet skal tegnes
    :param y: Talværdi: y-koordinat hvor billedet skal tegnes
    :param filename: Tekststreng: filnavn på billedfilen, f.eks. ``"img.bmp"`` eller ``"photo.jpg"``
+
+Vær opmærksom på at billedet skal ligge på M5Stick'en for at kunne blive indlæst. Se :ref:`comtilM5` for hjælp til at overføre.
 
 
 Tegne tekst på skærmen
