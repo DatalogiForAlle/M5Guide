@@ -22,12 +22,13 @@ Kom godt igang
 ==============
 Der findes forskellige måder at programmere sin M5StickC på. I denne
 guide bruger vi MicroPython og Mu-editoren. Man kan også programmere
-den med Arduino, men så skal man søge dokumentation andet steds fra.
+den i C++ med Arduino editoren, men så skal man søge dokumentation
+andet steds fra.
 
 Videoguide
 ----------
 
-I videoen her forklarer Maja trinnene til at installere MU-editoren. Har du problemer, så
+I videoen her forklarer Maja trinnene til at installere Mu-editoren. Har du problemer, så
 finder du en :ref:`troubleshooting_guide` nederst på denne side.
 
 .. raw:: html
@@ -36,7 +37,7 @@ finder du en :ref:`troubleshooting_guide` nederst på denne side.
          
 
 
-Installation af MU-editoren
+Installation af Mu-editoren
 ---------------------------
 Hent og installér denne alpha-udgave af Mu-editoren, som understøtter M5StickC:
 
@@ -124,14 +125,27 @@ nu kunne se noget skrift på M5StickCs lcd skærm.
       :alt: tekst "Hello!"
       :width: 500px
 
-main.py
--------
+Overfør kode til M5StickC
+-------------------------
+Hvis du gerne vil kunne bruge din M5StickC uden at den er koblet til
+computeren, så er det ikke nok at køre programmet, det skal også
+kopieres over på M5Stickens interne hukommelse, så den kan huske det
+næste gang den startes.
 
-Når du klikker Run |RUN| i mu editoren, kører du dit program fra MU. Det vil sige at det IKKE ligger på M5StickC. Hvis du tager USBstikket ud og genstarter, vil din kode stoppe med at køre. For at kunne køre uden tilslutning til MU, skal dit program skrives over på M5Stick'en og have navnet main.py. 
+Når en M5StickC starter op kører den automatisk det program der er
+gemt under navnet `main.py` i den interne hukommelse.
 
-M5StickC kører altid main.py efter boot.py. 
+..
+   Når du klikker Run |RUN| i mu editoren, kører du dit program fra
+   Mu. Det vil sige at det IKKE ligger på M5StickC. Hvis du tager
+   USB-stikket ud og genstarter, vil din kode stoppe med at køre. For at
+   kunne køre uden tilslutning til Mu, skal dit program skrives over på
+   M5Stick'en og have navnet main.py.
 
-I MU kan du let skrive den kode du har arbejdet på over på M5StickC, ved at åbne filer |FILES|, finde navnet på din fil du gerne vil have skal være main, højreklikke og vælge "Write to main.py on device". 
+I Mu kan du let skrive den kode du har arbejdet på over på M5StickC,
+ved at åbne Files |FILES|, finde navnet på din fil du gerne vil have
+skal bruges som `main.py`, højreklikke og vælge "Write to main.py on
+device".
 
 Nu ligger filen på den M5Stick, og vil blive kørt hver gang du tænder den.  
 

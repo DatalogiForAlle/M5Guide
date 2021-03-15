@@ -70,7 +70,7 @@ opdateres med de nyeste værdier fra accelerometeret og gyroskopet.
 Først overføres filen ``fusion.py`` fra internettet til din computer:
 https://raw.githubusercontent.com/DatalogiForAlle/M5Guide/master/lib/fusion.py
 
-Dette kan gøres ved at klikke på linket og derefter trykke **ctrl** + **s** / **command** + **s** og så gemme fusion.py samme sted som du gemmer den kode du arbejder med. Alternativt kan du copy-paste alt koden ind i en ny fil i MU-editoren og så gemme den under navnet fusion.py.
+Dette kan gøres ved at klikke på linket og derefter trykke **ctrl** + **s** / **command** + **s** og så gemme fusion.py samme sted som du gemmer den kode du arbejder med. Alternativt kan du copy-paste alt koden ind i en ny fil i Mu-editoren og så gemme den under navnet fusion.py.
 
 For at overføre fra computer til M5StickC, se :ref:`comtilM5`
 
