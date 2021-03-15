@@ -46,9 +46,12 @@ eksempel har de danske universiteter en fælles server der hedder
 `ntp.forskningsnettet.dk` (man kan ikke tilgå den via en browser).
 
 For at indstille uret via en tidsserver, skal vi bruge et ekstra
-modul, der ikke følger med en M5StickC. <<link til fil på Github>>
+modul `m5ntp.py`, der ikke følger med en M5StickC.
 
-.. todo:: indsæt link til modulet
+Download filen `m5ntp.py` og gem den på jeres computer:
+https://raw.githubusercontent.com/DatalogiForAlle/M5Guide/master/lib/m5ntp.py
+
+Åbn filen i Mu-editor og overfør den til din M5StickC. Se hvordan her: :ref:`comtilM5`
 
 Når I har overført filen til jeres M5StickC, kan I importere den via::
 

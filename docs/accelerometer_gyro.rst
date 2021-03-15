@@ -189,14 +189,14 @@ Bevægelse langs y-aksen kan aflæses på M5StcikC og i REPL::
 	while True: 
 		ax, ay, az = myIMU.acceleration 
 		if ay > ay_sidst: 
-			#denne linje skriver til MU-editoren
+			#denne linje skriver til Mu-editoren
 			print('godt!') 
 			#denne linje sætter en baggrundsfarve på M5StickC
 			lcd.clear(0x75ad0a)
 			#denne linje skriver text til M5StickC
 			lcd.text(5,5,"godt!")
 		else: 
-			#denne linje skriver til MU-editoren
+			#denne linje skriver til Mu-editoren
 			print('lidt hurtigere..') 
 			#denne linje sætter en baggrundsfarve på M5StickC
 			lcd.clear(0xffff99)
