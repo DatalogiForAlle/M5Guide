@@ -41,9 +41,9 @@ Installation af Mu-editoren
 ---------------------------
 Hent og installér denne alpha-udgave af Mu-editoren, som understøtter M5StickC:
 
-- `Hent Mu-editor til Windows (64 bit) <https://s3-eu-west-2.amazonaws.com/mu-builds/windows/mu_2020-10-23_13_42_master_3083c77_64bit.exe>`_
-- `Hent Mu-editor til Mac OS X <https://s3-eu-west-2.amazonaws.com/mu-builds/osx/mu-editor_2020-10-08_22_06_master_e6adf68.zip>`_
-- `Hent Mu-editor til Linux <https://s3-eu-west-2.amazonaws.com/mu-builds/linux/mu_2018-06-12_14_00_master_11bdd93.bin>`_
+- `Hent Mu-editor til Windows (64 bit) <https://github.com/mu-editor/mu/releases/download/1.1.0-beta.2/Mu-Editor-Win64-1.1.0b2.msi>`_
+- `Hent Mu-editor til Mac OS X <https://github.com/mu-editor/mu/releases/download/1.1.0-beta.2/Mu.Editor.1.1.0b2.dmg>`_
+- `Hent Mu-editor til Linux <https://github.com/mu-editor/mu/archive/1.1.0-beta.2.tar.gz>`_
 
 .. warning:: Nyeste udgave af Mu fra deres hjemmeside, understøtter
              ikke M5StickC endnu. Derfor er det vigtigt du henter Mu
