@@ -34,7 +34,7 @@ Brugerguide
    sensorfusion
    wifi
    loggedata
-   hat
+   spkhat
    envhat			
    tid
    stroem

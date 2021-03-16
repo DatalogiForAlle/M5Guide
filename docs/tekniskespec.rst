@@ -49,6 +49,7 @@ Hvad kan hvis man tilslutter eksternt udstyr?
 Der kan tilsluttes forskelligt ekstraudstyr til M5StickC. Temperaturmåler, motor, joystick, højtaler, muskelsensor, LED og meget, meget mere. 
 
 .. image:: https://dataekspeditioner.dk/wp-content/uploads/2020/10/Vignet_Informatik-sundhed.jpg
+
 I projektet `Informatik og Sundhed <https://dataekspeditioner.dk/forloeb/informatik-og-sundhed-2/>`_ bliver M5StickC brugt sammen med en muskelsensor, til at udvikle et træningsur som hjælper med genoptræning efter et slagtilfælde.
 
 
