@@ -46,6 +46,8 @@ html_show_sourcelink = False
 
 todo_include_todos = True
 
+# build .mo file for translation
+gettext_auto_build = True
 
 # -- Options for HTML output -------------------------------------------------
 
