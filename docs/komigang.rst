@@ -18,7 +18,7 @@
    :height: 20
    :width: 20
 
-Kom godt igang
+Kom godt i gang
 ==============
 Der findes forskellige måder at programmere sin M5StickC på. I denne
 guide bruger vi MicroPython og Mu-editoren. Man kan også programmere
