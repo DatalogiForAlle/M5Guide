@@ -34,6 +34,7 @@ Brugerguide
    sensorfusion
    wifi
    loggedata
+   brugbiblioteker	
    hat
    envhat			
    tid

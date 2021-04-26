@@ -10,8 +10,8 @@
    :height: 20
    :width: 20
 
-Overfør, gem og hent data
-=========================
+Gem og hent data
+================
 
 Gemme data
 ----------
@@ -49,21 +49,22 @@ Man skal dog holde tungen lige i munden her - der er en masse tilfælde hvor den
 Man kan også importere en .txt fil til de fleste regneark, men hvis man ikke skal lave for meget manuel oprydning, er det en fordel at tænke i de baner som beskrevet herover. 
 
 
+Fra M5stickC til computer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Med :func:`open`, :func:`fil.write` og :func:`fil.close` bliver dokumentet gemt lokalt på M5stick'en. For at få den over på computeren, kan man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over til \"Files on your computer:\". Filen ligger nu samme sted som den mu-fil du arbejder i er gemt.  
+
+.. image:: illustrationer/movefile.gif
+
 Hente data
 ----------
-
-Hvis man vil se indholdet af en fil klan det gøres ved at åbne den i læsetilstand med :func:`open` og give \'r\' (r for read) som 2. argument. Dernæst kan funktionen :func:`fil.read` bruges, f.eks sammen med printfunktionen::
-
-	fil = open('data.txt', 'r')
-	print(fil.read())
-	fil.close()
-
-
+For at brug noget data man har fra en anden kilde, skal man først overføre den pågældende data-fil til M5stickC'en. 
 
 .. _comtilM5:
 
 Fra computer til M5stickC
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo:: lave afsnittet om til at handle om .csv fil og andre datafiler. Lav ny illustration. 
 
 For at overføre filer fra computeren til M5Stick, skal man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over fra \"Files on your computer:\" over til \"Files on your devise:\". 
 
@@ -73,12 +74,20 @@ MU åbner kun den mappe som det kode du er ved at skrive ligger gemt i - så du 
 
 .. image:: illustrationer/comtilm5.gif
 
+Åben datafil
+^^^^^^^^^^^^
 
-Fra M5stickC til computer
--------------------------
-Med :func:`open` og :func:`fil.write` bliver dokumentet gemt lokalt på M5stick'en. For at få den over på computeren, kan man klikke på Files |FILES| i mu-editoren (husk at lukke REPL og Plotter) og trække den ønskede fil over til \"Files on your computer:\". Filen ligger nu samme sted som den mu-fil du arbejder i er gemt.  
+Hvis man vil se indholdet af en fil der ligger på M5StickC, kan det gøres ved at åbne den i læsetilstand med :func:`open` og give \'r\' (r for read) som 2. argument. Dernæst kan funktionen :func:`fil.read` bruges, f.eks sammen med printfunktionen::
 
-.. image:: illustrationer/movefile.gif
+	fil = open('data.txt', 'r')
+	print(fil.read())
+	fil.close()
+
+
+
+
+
+
 
 
 
@@ -118,6 +127,10 @@ Der er basis for at kludre rigtig meget rundt i tallene - så se dig godt for.
 
 
 
+EKSEMPEL: Hente data i .csv format
+----------------------------------
+
+.. todo:: skriv afsnit
 
 
 

@@ -19,7 +19,7 @@
    :width: 20
 
 Kom godt i gang
-==============
+===============
 Der findes forskellige måder at programmere sin M5StickC på. I denne
 guide bruger vi MicroPython og Mu-editoren. Man kan også programmere
 den i C++ med Arduino editoren, men så skal man søge dokumentation
