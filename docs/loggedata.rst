@@ -32,13 +32,22 @@ Tilsidst lukkes filen med :func:`f.close`::
 	
 	fil.close()
 
+Hvis du vil tilføje noget til en existerende fil, skal du ikke bruge \'w\' som argument. \'w\' overskriver eventuelle existerende filer, der har det navn du giver med. 
+
+Brug i stedet \'a\' (a for append)::
+
+	fil = open('data.txt', 'a')
+	fil.write('Denne tekst bliver tilføjet til sidst i filen') 
+	fil.close() 
+
+Hvis der ikke er nogen fil med navnet du giver, i det her tilfælde data.txt, så bliver filen oprettet. 
 
 .csv fil
 ^^^^^^^^
 
 På tilsvarende måde kan man lave en .csv fil. CSV står for comma-seperated value. Med csvfiler kan man lave datafiler der egner sig til at bliver læst ind i en tabel i et regneark. Man bruger komma som skifter til næste søjle, mens \'\\n\' (newline) skifter til næste række::
 
-	fil = open('data.csv', 'w')
+	fil = open('data.csv', 'a')
 	fil.write(',søjle1,søjle2,søjle3\n' +
          	  'række1,1,2,3\n' +
          	  'række2,4,5,6\n' +
