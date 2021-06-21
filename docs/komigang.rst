@@ -282,6 +282,15 @@ generel USB-port troubleshooting på Mac:
 https://macpaw.com/how-to/fix-usb-ports-on-mac Lad M5Stick være tilsluttet
 mens du følger guiden.
 
+Installation af Mu (Linux)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hvis Mu ikke vil starte kan du prøve at køre disse kommandoer fra terminalen:
+
+* Installation: ``pip3 install mu-editor==1.1.0b2``
+* Tilføj gruppemedlemskab: ``sudo user [brugernavn] dialout``
+* Log af og på
+* Start editor:  ``mu-editor``
+
 Har du stadig problemer?
 ^^^^^^^^^^^^^^^^^^^^^^^^
 

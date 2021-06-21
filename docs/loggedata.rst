@@ -36,16 +36,20 @@ Tilsidst lukkes filen med :func:`f.close`::
 .csv fil
 ^^^^^^^^
 
-På tilsvarende måde kan man lave en .csv fil. Her kan man bruge semikolon som skifter til næste søjle, mens \'\\n\' (newline) skifter til næste række::
+På tilsvarende måde kan man lave en .csv fil. CSV står for comma-seperated value. Med csvfiler kan man lave datafiler der egner sig til at bliver læst ind i en tabel i et regneark. Man bruger komma som skifter til næste søjle, mens \'\\n\' (newline) skifter til næste række::
 
 	fil = open('data.csv', 'w')
-	fil.write(';søjle1;søjle2;søjle3\n' +
-         	  'række1;1;2;3\n' +
-         	  'række2;4;5;6\n' +
-        	  'række3;7;8;9\n')
+	fil.write(',søjle1,søjle2,søjle3\n' +
+         	  'række1,1,2,3\n' +
+         	  'række2,4,5,6\n' +
+        	  'række3,7,8,9\n')
 	fil.close()
 
-Man skal dog holde tungen lige i munden her - der er en masse tilfælde hvor denne metode vil give et dårligt resultat - og pas på med mellemrum. Python har et indbygget bibliotek til at håndtere csv-filer, med det er desværre ikke med som standart på M5stickC. 
+Ovenstående kode, vil give en fil der ser sådan her ud i et regneark (f.eks. Google sheets):
+  
+.. image:: illustrationer/regneark.png
+
+Man skal holde tungen lige i munden her - der er en masse tilfælde hvor denne metode vil give et dårligt resultat - pas på med mellemrum og vær især opmærksom på om dine tal bruger komma som decimalseparator - eller som tusindstalsseparator. Python har et indbygget bibliotek til at håndtere csv-filer, med det er desværre ikke med som standart på M5stickC. 
 Man kan også importere en .txt fil til de fleste regneark, men hvis man ikke skal lave for meget manuel oprydning, er det en fordel at tænke i de baner som beskrevet herover. 
 
 

@@ -14,10 +14,10 @@ Man kan finde mange forskellige biblioteker, der dækker mange forskellige behov
 Find bibliotek
 --------------
 
-Til M5stickC er der skrevet et bibliotek der hedder ``fusion.py`` der blandt andet gør det lettere at bruge den indbyggede bevægelsessensor.
+Et bibliotek der hedder ``fusion.py`` gør det lettere at bruge den indbyggede bevægelsessensor.
 
 For at gøre brug af fusion-biblioteket skal ``fusion.py`` først overføres fra internettet til din computer.
-Du finder den her:
+Du finder ``fusion.py`` her:
 
 https://raw.githubusercontent.com/DatalogiForAlle/M5Guide/master/lib/fusion.py
 
@@ -25,7 +25,7 @@ Du gemmer ``fusion.py`` ved at klikke på linket og derefter trykke **ctrl** + *
 Sørg for at gemme ``fusion.py`` samme sted som du gemmer den kode du arbejder med. 
 Alternativt kan du copy-paste alt koden ind i en ny fil i Mu-editoren og så gemme den under navnet fusion.py.
 
-.. todo:: afsnit i bunden af siden, hvor de forskellige funktioner i fusion.py forklares?  
+OBS: ``fusion.py`` er bare et eksempel på et bibliotek du kan bruge med M5StickC - der findes masser andre biblioteker på nettet. 
 
 Overfør bibliotek
 -----------------
