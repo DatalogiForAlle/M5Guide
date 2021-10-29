@@ -127,9 +127,3 @@ man kalde funktionen ``axp.powerOff()``
 .. function:: axp.powerOff()
 
    Slukker din M5StickC.
-
-
-
-
-
-
